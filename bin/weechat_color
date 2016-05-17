@@ -1,0 +1,5 @@
+#!/bin/bash
+export TERM="tmux-256color"
+
+weechat-curses
+

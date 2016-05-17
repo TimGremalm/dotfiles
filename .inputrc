@@ -1,0 +1,8 @@
+#Enable case-insensative autocompletion
+set completion-ignore-case on
+
+#Enable cycleing autocompletion and autocomplete-list
+TAB: menu-complete
+"\e[Z": menu-complete-backward
+"\C-f": complete
+

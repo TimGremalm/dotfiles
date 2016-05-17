@@ -1,0 +1,64 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs
+*.log
+
+# Databases
+*.sql
+*.sqlite
+
+# Sensative files
+wp-config.php
+
+# vim
+*~
+*.swp
+*.swo
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.com
+*.out
+*.app
+*.hex
+
