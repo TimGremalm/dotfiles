@@ -1,0 +1,182 @@
+﻿Repository
+	git init
+		Initialize the current directory as an git-repository
+	git clone [path]
+		Clone a repository
+
+Branches
+	git branch
+		List branches
+	git checkout [branch]
+		Change branch to target
+	git checkout -b [branch]
+		Create branch and change to it
+	git merge [branch]
+		Maerge target-branch into the current branch
+	git rebase [branch]
+		Forward-port local commits to the updated upstream head
+	git mergetool
+		Solve merge-conflicts in external program
+
+		LOCAL - Your file with the changes you've made to it
+		REMOTE - The file you're merging in, possibly authored by someone else
+		BASE - The common ancestor file that LOCAL and REMOTE came from
+		MERGE_RESULT - The file resulting from the merge where you resolve conflicts
+	git rebase --continue
+		Continue rebase after merge-conflict
+	git rebase --abort
+		Abort rebase after merge-conflict
+	git reset --hard [branch]
+		Restores a rep to branch (Removes untracked changed files)
+	git branch -m <newname>
+		Rename branch
+	git branch -d [branch]
+		Delete branch
+	git merge [branch]
+		Merge from branch into current branch (discard the branch-history)
+	git merge --no-ff [branch]
+		Merge from branch into current branch (keep the branch-history)
+	git cherry-pick [commit]
+		Integrate changes in the given commit into the current branch.
+	git reset --hard origin/master
+		Forcefully reset to origin
+
+Stage
+	git add [file]
+	git add -i
+		Add files to stage interactive
+	git add --all|.
+		Stage all untracked files
+	git reset HEAD [file]
+		Unstage a file
+
+Commit
+	git commit
+	git commit --amend
+		Edit comment on latest commit
+	edit specifik commit
+		git rebase --interactive bbc643cd^
+			In the default editor, choose to edit you commit.
+		git commit --amend
+			Edit the commit-message
+		git rebase --continue
+			Continue the rebase all the way to head.
+	git revert [commit]
+		Removes a commit
+	git revert HEAD~2
+		Removes the 2 latest commits
+	git rebase -i HEAD~3
+		Interactive join (squash) the 3 latest commits into 1 commit
+		pick f392171 Added new feature X
+		squash ba9dd9a Added new elements to page design
+		squash df71a27 Updated CSS for new elements
+
+Get
+	git pull
+		Get the latest, and fast forward
+	git fetch
+		Download objects and refs from another repository
+	git fetch --all
+		Fetch all remotes.
+
+Info
+	git status
+	git diff --cached
+		See what you've staged so far
+	git log
+		Show latest commits
+	git log -p -2
+		Show the two latest commits
+	git log --graph
+		Show a branch-graph
+	git log -- [file]
+		Show latest commits of file
+	git log -p [file]
+		Show latest commits of file
+	git show-branch 7cefa813
+		Show branch-name of sha1
+	git log --stat 7cefa813
+		Show summary of branch
+	git log -p -w --stat 7cefa813
+		Show summary of branch, with diff
+	git log -1 -p -w --stat 7cefa813
+		Show summary of single commit, with diff
+	git log --grep=search_for_this
+	gitk --all
+	git reflog
+		Shows your git-history (pull, jumping between branches, merging etc.)
+
+Search
+	git blame my_branch file.txt
+		Shows who edited each line in the file, and in what branch
+	git blame HEAD -L328,+5 "script/thatscript.sh"
+		Show changes on line 3728
+	git grep SearchString -- '*.js'
+		Search for content in filetype js
+
+Files
+	git mv file newname
+	git diff [branch] file
+		diff the local file to the on in a branch
+	git difftool [branch] file
+		Diff with an external tool
+	git diff --no-ext-dif
+		No external diff-tool
+	git checkout file
+		Resets file to current branch
+	git checkout [branch] file
+		Resets file to branch
+	git checkout -- .
+		Resets all unstaged files
+	git clean -f -d
+		Remove untracked files from the working tree (Resets all untracked files to current branch, forced and directories)
+	git clean -f -d -x
+		Remove untracked files from the working tree (Resets all untracked files to current branch, forced and directories)
+		Don’t use the standard ignore rules read from .gitignore
+
+Stash
+	git stash save "Stash-Comment"
+	git stash list
+	git stash show [stash]
+	git stash apply|pop [latest|stash@{0}]
+	git stash drop [stash]
+
+git bisect
+	Step through revisions to see when a bug was introduced
+
+Remote
+	git remote -v
+		Show remotes connected to repository
+	git remote add kollega //KollegaHostname/git/repo
+	git fetch kollega
+	git request-pull kollega/branch //MyHostname/git/repo
+
+Git Worklfow on branches
+	Squash your private branches before mergeing
+
+    git checkout -b private_feature_branch
+    touch file1.txt
+    git add file1.txt
+    git commit -am "WIP"
+
+	When I’m done, instead of a vanilla git merge, I’ll run:
+    git checkout master
+    git merge --squash private_feature_branch
+    git commit -v
+
+.gitignore
+	build
+	.*
+		Userspecific configurationfiles
+	*~
+	~*
+	_*
+		Lockfiles
+	wp-config.php
+		Secret configuration
+	Solution/*/bin/Debug
+	Solution/*/bin/Release
+		Could bw written
+		**/bin/Debug/
+		**/bin/Release/
+

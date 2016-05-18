@@ -1,0 +1,128 @@
+#!/bin/bash
+# sudovim.sh -	Edit files, that require sudo, as yourself
+#				It will copy you files as sudo to /tmp
+#				You will edit those files with your editor as your user
+#				After the editor has closed, and if a file has changed,
+#				it will as you if you want to move back your files
+# Written by Tim Gremalm 2013-11-05 (tim@gremalm.se http://tim.gremalm.se)
+# Inspired by Devilholk
+
+# Settings
+# vim - -p[N] Open N tab pages. When N is omitted, open one tab page for each file.
+editor="vim -pN "
+diffcommand="diff "
+diffviewer="vimdiff "
+TMPDIR="/tmp"
+
+# Check if /tmp exists
+if [ ! -d "$TMPDIR" ]; then
+	echo The temporary directory "$TMPDIR" dont exist. Exit.
+	exit 1
+fi
+
+# $(python -c "import tempfile, sys; sys.stdout.write(tempfile.mkdtemp())" 
+
+# Check if each argument is a file and exists
+for Arg in "$@"; do
+	if [ ! -e "$Arg" ]; then
+		echo File "$Arg" dont exist. Exit.
+		exit 2
+	fi
+
+	if [ -d "$Arg" ]; then
+		echo "$Arg" is a directory. Exit.
+		exit 3
+	fi
+done
+
+# Make an ls -l on each file
+echo Files before edit:
+for Arg in "$@"; do
+	ls -l "$Arg"
+done
+echo " "
+
+# Copy each file to $TMPDIR
+for Arg in "$@"; do
+	sudo cp "$Arg" "$TMPDIR"
+
+	#Change rights
+	filename="${Arg##*/}"
+	sudo chmod 777 "$TMPDIR/$filename"
+done
+
+# Start edit
+# Build editorarg to edit in $TMPDIR
+for Arg in "$@"; do
+	filename="${Arg##*/}"
+	editorarg="$editorarg $TMPDIR/$filename"
+done
+#Start editor
+echo $editor $editorarg
+$editor $editorarg
+
+# Move files to its original path
+for Arg in "$@"; do
+	filename="${Arg##*/}"
+	fileowner=`ls -l "$Arg"|awk '{print $3}'`
+	filegroup=`ls -l "$Arg"|awk '{print $3}'`
+	filerights=`stat -c %a "$Arg"`
+
+	# Check if file has chaged
+	# Ask if you want to be shown a diff
+	# or if you want to apply changes with sudo
+	NumOfLines=$($diffcommand "$TMPDIR/$filename" "$Arg"|wc -l)
+	#echo NumOfLines $NumOfLines
+	if [ $NumOfLines -gt 0 ]; then
+		# Uncomment to echo debug-stuff
+		#echo Filename is $filename
+		#echo Owner is $fileowner
+		#echo Group is $filegroup
+		#echo Rights is $filerights
+		#echo sudo mv "$Arg" "$TMPDIR"
+		#echo sudo chown $fileowner:$filegroup "$Arg"
+		#echo sudo chmod $filerights "$Arg"
+		#echo " "
+
+		while true; do
+			echo ""
+			read -p "The file $filename has changed. Do you wish to apply the change with sudo, or diff the new and old file? Y/N/D: " ynd
+			case $ynd in
+				[Yy]* )
+					#echo Y;
+					#echo sudo mv "$Arg" "$TMPDIR";
+					#echo sudo chown $fileowner:$filegroup "$Arg";
+					#echo sudo chmod $filerights "$Arg";
+					sudo mv "$TMPDIR/$filename" "$Arg";
+					sudo chown $fileowner:$filegroup "$Arg";
+					sudo chmod $filerights "$Arg";
+					break;;
+				[Nn]* )
+					#echo N;
+					break;;
+				[Dd]* )
+					#echo D;
+					#echo $diffviewer "$Arg" "$TMPDIR/$filename";
+					$diffviewer "$Arg" "$TMPDIR/$filename";;
+				* )
+					echo "Please answer yes or no or diff.";;
+			esac
+		done
+	fi
+done
+
+# Cleanup
+for Arg in "$@"; do
+	filename="${Arg##*/}"
+	if [ -e "$TMPDIR/$filename" ]; then
+		sudo rm "$TMPDIR/$filename"
+	fi
+done
+
+# Make an ls -l on each file to prove the filerights are still intact
+echo " "
+echo Files after edit:
+for Arg in "$@"; do
+	ls -l "$Arg"
+done
+

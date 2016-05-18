@@ -1,0 +1,559 @@
+File, Search, Find
+	ls
+		Show all files, including hidden dot-files (.file)
+			ls -la
+
+		Show only files (subtract directories)
+			ls -l | grep -v drw
+
+		Show only directories
+			ls -l | grep drw
+
+		Show human readable
+			ls -lh
+
+	chmod
+		set's file premissions
+		chmod OwnerGroupOther file
+		chmod 744 file
+		chmod o=r file
+			other-premissions will be set to read, if write or execute is set it will be removed
+		chmod o+x file
+			adds execute-premissions for other on file
+		chmod ug=rwx file
+			sets rwx-premissions for owner and group
+	xxd
+		xxd file
+		Show hexdump of file
+	chown
+		Sets ownership of a file
+		chown user:group file
+
+	find
+		Find for files named x under current directory
+			find . -name smb.conf -print
+
+		Find for files case insensative
+			find . -iname smb.conf -print
+
+		Find with wildcard
+			find . -name '*find*' -print
+
+		FInd files older than 24 hours
+			find . -ctime 1 -print
+
+		Find large files over 100MB
+			find ./ -size +10000 -exec ls -lh "{}" \;
+
+		Find files and in thos files grep after searchterm
+			find ./my_lib/* -type f -exec grep -l searchterm {} \;
+
+	touch
+		Touch a file, set modified-date to now, if no file exists a new file will be created
+
+	tree
+		Lists a tree with subdirectories
+
+	file
+		file fileame
+		Shows information about the file, ex: ubuntu.txt: ISO-8859 text, with CRLF line terminators
+
+	gunzip
+		Unzip a file
+			gunzip file.gz
+
+	gzip
+		Compress files to a zip
+			gzip files
+
+	gzcat
+		List content of a zip
+			gzcat file.gz
+
+	tar
+		Pack a tar file
+			tar -xvt file.tar
+
+	pwd
+		Stdout current directory
+			pwd
+
+	cd
+		Jump to home directory
+			cd
+
+		Jump to previous directory
+			cd -
+
+	mkdir
+		Create directories recursivly
+			mkdir -p /tmp/mydirectory/dir1/dir2/dir3
+
+		Create directory and set the user permissions directly
+			mkdir -m 777 /tmp/mydirectory
+
+	grep
+		Invert search, remove all occurancess of searchterm
+			grep -v searchterm
+
+	Grep case-insensative
+		grep -i sökbegrepp
+
+	tr
+		Reaplace characters
+		echo "Hello" | tr "A-Za-z" "a-zA-Z"
+		hELLO
+
+	sort
+		Sort text
+		sort -n
+			Sorterar efter siffror
+		sort -r
+			Reverse
+
+	uniq
+		Remove dupluicate rows
+			sort a.txt|uniq
+		Cound duplicates
+			uniq -c
+
+	du
+		Show size of a file
+			du file
+		Summarize the size of a complete directory
+			du -hs /usr
+		Human readable
+			du -h file
+
+	df
+		Show physical and remote mounting point and how much free space there is left
+			df -gt
+
+		Show human readable
+			df -h
+
+		On older Unix versions
+			df -k
+	ldd
+		Kolla so-filer beroenen till binär
+		ldd /usr/bin/sh
+
+	lsusb
+		Lista usb-devises
+
+	ls /dev
+		Lista devices under the mountingpoint in the filesystem
+
+	mount
+		Mount ISO-file
+			sudo mount -o loop ~/file.iso /mntpoint
+
+		Mount Windows share via samba
+			sudo apt-get install samba
+			alternative sudo apt-get install samba smbfs
+
+			edit /etc/fstab and add in the end:
+				//192.168.0.1/ShareName /mountpoint smbfs uid=UbuntuUserToMapAs,user=WindowsUsername,password=WindowsPassword 0 0
+			sudo mount -t cifs -o user=cmd,password=194_cmd //194.71.3.7/g /g
+
+Editor
+	vi/vim
+		Show row number
+			:set nu
+
+		Autoindent
+			:set autoindent
+
+		Search case instensative
+			:set ignorecase
+
+		Mark search result
+			:set showmatch
+
+		Wrap the search to the beginning of the document if there's no search results in the end of file
+			:set wrapscan
+
+		Export row 18-22 to file
+			:18,22 w! /tmp/filename
+
+		Export row 18-EoF to file
+			:18, w! /tmp/filename
+
+		Import file at cursor
+			:r /tmp/filename
+
+		Search for OLD and replace with NEW at current line
+			I'm riding an OLD bike.
+			:s/OLD/NEW/
+			I'm riding an NEW bike.
+
+		Search and replace globally
+			:s/OLD/NEW/g
+
+		Escape-character
+			I'm riding an O/LD bike.
+			:s/O\/LD/NEW/g
+
+		Enable syntax highlighting
+			:syntax on
+			:syntax enable
+			:syn on
+			:syn off
+
+		Set syntax-language to a specific language
+			:setf c
+			:setf php
+			:setf xml
+		Set UTF-8
+			:set enc=utf-8
+
+Filetransfer
+	FTP (not SFTP)
+		Enter passive mode
+			passive
+
+		Enter passive mode (Windows):
+			literal pasv
+
+		Set binary mode
+			bin
+
+		Get multiple files
+			mget *.txt
+
+		Send multiple files
+			mput *.txt
+
+		No questions
+			ftp -i host
+
+	uustat
+		List transfer jobs in the queue
+			uustat -a
+
+		Cancel job
+			uustat -kill JobNumber
+
+		Cancel all jobs
+			uucancel
+
+Text tools
+	tail
+		Output the 24 last lines of a file (useful for logfiles)
+			tail -24 file
+
+		Continuesly watch a file and print it
+
+	head
+		Show first 3 lines of a file
+			head -3 file
+
+	wc
+		Show word count, and lines
+			wc file
+
+		Show the number of lines in file
+			wc -l file
+
+	awk
+		Output row number 10 in file1
+			awk 'NR==10' file1
+
+	cut
+		Cut text via delimiter plus sign
+			cut -d+ -f4
+
+		Cut text by column 2-4
+			cut -c 2-4 file
+
+		Split environmentvariable PATH (Windows)
+			echo %PATH%|cut -d";" -f1-2
+
+		Split environmentvariable PATH (Unix-like)
+			echo %PATH%|cut -d":" -f1-2
+
+	paste
+		Paste files, column by column (horizontally)
+			paste file1 file2 file3>fileout
+
+	Use other delimiter then " "
+		paste -d"!" file1 file2 file3>fileout
+
+	cat
+		Outoput text via stdout
+			cat file
+
+	banner
+		Show text in a big header, ascii art style
+			banner Hello world!
+
+	diff
+		Outputs the diff between files
+			diff fil1 fil2
+
+		Outputs the diff between files, don't count white space
+			diff -b fil1 fil2
+	vimdiff
+		Graphical diff view in vim
+
+Printer
+	Print file
+		lp file
+
+Cammand history in shell
+	history
+		Shows history of the latest run commands
+			history
+
+		Run command number 12 in the command history
+			!12
+
+		Search after a command in the history and run it
+			!grep
+
+		Run latest command
+			!!
+
+System time/date
+	date
+		Show date and time
+			date
+
+	cal
+		Show graphical calendar, ascii art style
+			cal
+
+	cat /etc/*-release
+		Output what linux-distro is running
+
+System administration
+	topas/top/htop
+		*Shows processes and their CPU usage
+		*Shows CPU time to Kernal, User, Idle, Wait
+		*Shows diskusage
+		*Shows IO activity
+		*Showa available ram
+			topas
+
+	ps
+		Show information about processes, owner, runtime
+			ps -ef
+
+		Show process for PID
+			ps -f -T12345
+
+		Only list child processes for current shell ($$ is the current shells PID)
+			ps -f -T$$
+
+		List processes run by users
+			ps -f -uUsr1,Usr2
+
+	kill
+		Kill a process with signal number 9, not nice
+			kill -9 PID
+
+		Kill a process and start a new process with the same PID (hangup & continue)
+			kill -HUP PID
+
+		Signal number	Usage
+		1 				HUP (hang up)
+		2 				INT (interrupt)
+		3 				QUIT (quit)
+		6 				ABRT (abort)
+		9 				KILL (non-catchable, non-ignorable kill)
+		14 				ALRM (alarm clock)
+		15 				TERM (software termination signal)
+		[http://www.cyberciti.biz/faq/howto-kill-unix-process-with-kill-command/ http://www.cyberciti.biz/faq/howto-kill-unix-process-with-kill-command/]
+
+	pgrep
+		Grep for precesses, short for ps -ef|grep processname
+
+	pkill
+		Grep for process and kill direct
+
+	apt-get install
+		Get and install a program for Debian based systems
+			sudo apt-get install packetname
+
+	apt-get update
+		Update a installed program
+			sudo apt-get update packetname
+
+System User
+	w
+	who
+	finger
+		Shows a list of who is loged in, sessions and for how long
+
+	whoami
+		Outputs the current user
+			whoami
+
+	last
+		Shows latest logged in sessions
+			last
+
+		Shows latest logged in sessions for user
+			last Usr1
+
+Shell script
+	Argument $*, $1, $2
+		Instead of passing the arguments one by one, pass them all
+			script.sh $*
+
+	PID for current shell
+		$$
+
+	Starta script asynchronous with &
+		script.sh &
+
+	Run a script in current shell, without forking a new one (great for reading config files)
+		source script
+
+Network
+	telnet
+		Connect to a telnet server
+			telnet host
+
+	netstat
+		netstat -a
+			Shows current listening sockets
+
+	netstat
+		Shows current listening sockets with PID
+			netstat -Aan | grep LISTEN | more
+
+	ifconfig
+		Show all ethernet interfaces
+			ifconfig -a
+
+	host
+		SHow IP for entry in /etc/hosts
+
+	hostname
+		Visar hostname for server
+
+	hostname namn
+		Set hostname
+
+	ngrep
+		grep in network traffic localhost
+			sudo ngrep -d lo
+		grep in network traffic localhost, on port 5000
+			sudo ngrep -d lo 5000
+
+System Environment
+	Rehash
+		reload config file
+			rehash
+
+	alias
+		Set alias for command
+			alias ls='echo Hello'
+		alternative
+			alias ls 'echo Hello'
+
+	type
+		SHows what kind a of command is, ex: alias, function, binary, buildt in
+
+	jobs
+		Lists current jobs in background
+		Almost all processes can be suspended by pressing Ctrl+Z
+	fg
+		fg %1
+	bg
+		bg %1
+
+	alert
+		Skicka bell-signal till terminalen
+
+	Sleep for 1 second then send bell to terminal
+		sleep 1;printf '\a'
+
+	csh
+		Run script, parse the commads
+			csh -x script
+
+		Run script, show the commands
+			csh -v script
+
+	bash
+		Activate vi mode i bash
+			set -o vi
+
+	showkey
+		Show keyabord key codes, hit test
+			showkey -a
+
+	crontab
+		List cron-job for current user
+			crontab -l
+
+		Edit cron-job for current user
+			crontab -e
+
+Track errors and Debug
+	strace
+		Trace the file system calls for a binary
+			strace -o trace.txt mkdir mynewdir
+
+		Trace the file open calls for a binary
+			strace -e open bash
+
+	time
+		Measure the run time and CPU time used by a process
+
+	proc stack
+		Check the callstack for a grep'd process
+			sudo cat /proc/$(pgrep -f less)/stack
+
+	tee
+		Read stdin, and write to file, AND at the same time output it to stdout
+			less file.txt|tee copyOfStdIn.txt
+
+i3
+	dmenu
+		Print message in dmenu
+			echo hej|dmenu
+		What was written in dmenu will på outputed to stdout
+		Show pretty colors and original autocomplete
+			dmenu_run -p drad$ -nb '#000000' -nf '#FFFFFF' -sb '#848484' -sf '#000000'
+		Show pretty colors and own command-list
+			cat commands.txt|dmenu -p drad$ -nb '#000000' -nf '#FFFFFF' -sb '#848484' -sf '#000000'|cat
+		Show dmenu in bottom of screen
+			echo menu|dmenu -b|cat
+
+Textbased browsers
+	w3m (vim-like)
+	lynx
+
+Ubuntu
+	compiz				Grafiska fönster-effekter/funktioner
+	onboard				Onscreen keyboard
+	udisks-glue			Automounter
+
+Server maintinence
+	Ajenti		http-admin
+	SAMBA
+		SAMBA	SAMBA share disk
+		SWAT	Webinterface for samba
+
+CAD
+	kicad				Schematic-editor
+	FreeCad
+
+Graphics/Design/Media
+	InkScape
+	Gimp
+	Blender
+	kdenlive
+
+Office
+	libre office
+	okular PDF-viewer
+	Octave				MatLab-clone
+
+Screen blanking
+	xset					Disable X BlankTime (http://www.shallowsky.com/linux/x-screen-blanking.html)
+								xset s off
+

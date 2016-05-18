@@ -1,0 +1,3 @@
+#!/bin/bash
+nmap -p 22 --open -sV 192.168.1.0/24
+
