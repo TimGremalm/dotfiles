@@ -174,4 +174,7 @@ vnoremap > >gv
 "vim - -p[N] Open N tab pages. When N is omitted, open one tab page for each file.
 "vim -pN file1 file2 file3
 
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 

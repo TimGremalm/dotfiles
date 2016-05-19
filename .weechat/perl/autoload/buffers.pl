@@ -463,6 +463,12 @@ my %default_options_color =
      "", 0, 0, "237", "237", 0,
      "", "", "buffers_signal_config", "", "", ""
  ],
+ "color_bar_bg" => [
+     "bar_bg", "color",
+     "default background color for buffer name",
+     "", 0, 0, "233", "233", 0,
+     "", "", "buffers_signal_config", "", "", ""
+ ],
  "color_hotlist_highlight_fg" => [
      "hotlist_highlight_fg", "color",
      "change foreground color of buffer name if a highlight messaged received",
@@ -1295,10 +1301,15 @@ sub build_buffers
         # create channel number for output
         if ( weechat::config_string( $options{"show_prefix_bufname"} ) ne "" )
         {
-            $str .= $color_bg .
-                    weechat::color( weechat::config_color( $options{"color_prefix_bufname"} ) ).
-                    weechat::config_string( $options{"show_prefix_bufname"} ).
-                    weechat::color("default");
+			if ($buffer->{"current_buffer"}) {
+				$str .= weechat::color( weechat::config_color( $options{"color_bar_bg"} ) . "," . weechat::config_color( $options{"color_current_bg"} ) ).
+						weechat::config_string( $options{"show_prefix_bufname"} ).
+						weechat::color("default");
+			} else {
+				$str .= weechat::color( weechat::config_color( $options{"color_bar_bg"} ) . "," . weechat::config_color( $options{"color_buffer_bg"} ) ).
+						weechat::config_string( $options{"show_prefix_bufname"} ).
+						weechat::color("default");
+			}
         }
 
         if ( weechat::config_boolean( $options{"show_number"} ) eq 1 )   # on
@@ -1470,11 +1481,11 @@ sub build_buffers
 			if ($buffer->{"current_buffer"}) {
 				$str .= weechat::color( weechat::config_color( $options{"color_current_bg"} ) . "," . "default" ).
 						weechat::config_string( $options{"show_suffix_bufname"} ).
-						weechat::color("default");
+						weechat::color(weechat::color( "0" . "," . weechat::config_color( $options{"color_bar_bg"} ) ));
 			} else {
 				$str .= weechat::color( weechat::config_color( $options{"color_buffer_bg"} ) . "," . "default" ).
 						weechat::config_string( $options{"show_suffix_bufname"} ).
-						weechat::color("default");
+						weechat::color(weechat::color( "0" . "," . weechat::config_color( $options{"color_bar_bg"} ) ));
 			}
         }
 
