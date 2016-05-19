@@ -48,6 +48,12 @@ File, Search, Find
 		Find files and in thos files grep after searchterm
 			find ./my_lib/* -type f -exec grep -l searchterm {} \;
 
+		Find files but exlude directory A
+			find -type f -not -path "./A/*"
+
+		Find files with multiple name arguments
+			find . -name "*.bak" -name "*2013*"
+
 	touch
 		Touch a file, set modified-date to now, if no file exists a new file will be created
 
