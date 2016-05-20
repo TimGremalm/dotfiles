@@ -74,18 +74,45 @@ esac
 
 #The function for comparing files and copy vimdiff them
 function CopyOrDiff {
-	#Make sure the file is in the git-repo
 	file=$1
 	action=$2
+
+	#Make sure the file is in the git-repo
 	git ls-files "$file" --error-unmatch 1>/dev/null 2>&1
 	if [[ $? != 0 ]]; then
 		return 1
 	fi
-	if [[ "$file" == "./sync_with_homedir.sh" ]]; then
-		echo 2
-		#return 2
+
+	#Exclude some files
+	if [[ "$file" == "./sync_with_homedir.sh" || $file =~ README.md || "$file" == "./LICENSE" ]]; then
+		return 2
 	fi
-	echo "$1"
+
+	#echo "$1"
+	if [ -e "$HOME/$file" ]; then
+		NumOfLines=$(diff "$file" "$HOME/$file"|wc -l)
+		if [ $NumOfLines -gt 0 ]; then
+			if [[ "$action" == "status" ]]; then
+				echo "[Changed] $file"
+			fi
+			if [[ "$action" == "diff" ]]; then
+				echo "[Diff] $file"
+				diff "$file" "$HOME/$file"
+				echo " "
+			fi
+			if [[ "$action" == "merge" ]]; then
+				vimdiff "$file" "$HOME/$file"
+			fi
+		fi
+	else
+		if [[ "$action" == "merge" ]]; then
+			echo "[Copy] $file"
+			cp "$file" "$HOME/$file"
+		fi
+		if [[ "$action" == "status" || "$action" == "diff" ]]; then
+			echo "[New] $file"
+		fi
+	fi
 }
 export -f CopyOrDiff
 
@@ -101,6 +128,4 @@ status)
 	find . -type f -not -path "./.git/*" -exec bash -c 'CopyOrDiff "$0" status' {} \;
 	;;
 esac
-
-echo "EoF"
 
