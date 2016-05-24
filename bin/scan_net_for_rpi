@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Check arp table for mac-addresses with vendor Raspberry Pi Foundation"
+arp | grep -i b8:27:eb
