@@ -88,12 +88,12 @@ function CopyOrDiff {
 		return 2
 	fi
 
-	#echo "$1"
+	#Check file change mode based on action
 	if [ -e "$HOME/$file" ]; then
 		NumOfLines=$(diff "$file" "$HOME/$file"|wc -l)
 		if [ $NumOfLines -gt 0 ]; then
 			if [[ "$action" == "status" ]]; then
-				echo "[Changed] $file"
+				echo "[Differ] $file"
 			fi
 			if [[ "$action" == "diff" ]]; then
 				echo "[Diff] $file"

@@ -1,4 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 
 #Enable a more color rich terminal experience
 export TERM="xterm-256color"
@@ -21,6 +20,8 @@ fi
 #Change that strong blue to mild when listing directories
 LS_COLORS=$LS_COLORS:'di=0;96:'
 export LS_COLORS
+
+export editor='vim'
 
 #Enable vi-editor-mode in bash
 set -o vi

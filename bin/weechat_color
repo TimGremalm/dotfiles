@@ -1,4 +1,5 @@
 #!/bin/bash
+#set colored term that weechat want
 export TERM="tmux-256color"
 
 weechat-curses
