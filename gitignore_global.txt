@@ -40,6 +40,7 @@ wp-config.php
 *.o
 *.obj
 *.elf
+*.pyc
 
 # Precompiled Headers
 *.gch
