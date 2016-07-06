@@ -151,6 +151,16 @@ Remote
 	git fetch kollega
 	git request-pull kollega/branch //MyHostname/git/repo
 
+Submodule
+	git submodule add https://github.com/<user>/rock rock
+		Add new submodule rock that links to another repository
+	git submodule update --init --recursive
+		Download contents for all submodules
+	git clone --recursive <project url>
+		Clone project, and all it's content in submodules
+	git pull && git submodule init && git submodule update && git submodule status
+		Fully update the git repo that you are sitting in
+
 Git Worklfow on branches
 	Squash your private branches before mergeing
 
