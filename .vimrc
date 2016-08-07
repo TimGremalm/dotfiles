@@ -124,8 +124,8 @@ vnoremap > >gv
 ":set enc=iso-8859-1
 
 "Set newline mode
-":ser ff=dos
-":ser ff=unix
+":set ff=dos
+":set ff=unix
 
 "Set syntax language
 ":setf c
