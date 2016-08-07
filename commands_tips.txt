@@ -80,6 +80,10 @@ File, Search, Find
 		Pack a tar file
 			tar -xvt file.tar
 
+	gzip
+		Compress a file
+			gzip file.jpg
+
 	pwd
 		Stdout current directory
 			pwd
@@ -149,6 +153,13 @@ File, Search, Find
 
 	ls /dev
 		Lista devices under the mountingpoint in the filesystem
+
+	dd
+		Make bakup of sdcard
+			dd if=/dev/sdb of=backup.img bs=4M
+
+		Restore backup
+			dd if=backup.img of=/dev/sdb bs=4M
 
 	mount
 		Mount ISO-file
@@ -447,6 +458,13 @@ Network
 			sudo ngrep -d lo
 		grep in network traffic localhost, on port 5000
 			sudo ngrep -d lo 5000
+
+	nmap
+		List Scan
+			nmap -sL 172.16.0.0/24
+
+		Port scan
+			nmap -p22 172.16.0.0/24
 
 System Environment
 	Rehash
