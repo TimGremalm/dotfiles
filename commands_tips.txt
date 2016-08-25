@@ -509,6 +509,7 @@ System Environment
 	bash
 		Activate vi mode i bash
 			set -o vi
+			'v' opens the existing command in the editor
 
 	showkey
 		Show keyabord key codes, hit test
