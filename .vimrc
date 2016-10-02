@@ -171,8 +171,23 @@ vnoremap > >gv
 "q - Stop recording
 "9@a - Playback macro from register "a" 9 times
 
+"Find cahracter
+"Hello world
+"fw -find character "w"
+
+"Find character while replacing
+"Hello world
+"cfo - change everything up to character "o"
+
+"Work with vim grammer
+"y2w - yank two words
+"y3} - yank three paragrafes
+"dap - delete a paragraf
+
+"Start vim from the terminal
 "vim - -p[N] Open N tab pages. When N is omitted, open one tab page for each file.
 "vim -pN file1 file2 file3
+"vim -d file1 file2 - Compare files in diff mode
 
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
