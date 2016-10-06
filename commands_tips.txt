@@ -171,58 +171,7 @@ File, Search, Find
 
 			edit /etc/fstab and add in the end:
 				//192.168.0.1/ShareName /mountpoint smbfs uid=UbuntuUserToMapAs,user=WindowsUsername,password=WindowsPassword 0 0
-			sudo mount -t cifs -o user=cmd,password=194_cmd //194.71.3.7/g /g
-
-Editor
-	vi/vim
-		Show row number
-			:set nu
-
-		Autoindent
-			:set autoindent
-
-		Search case instensative
-			:set ignorecase
-
-		Mark search result
-			:set showmatch
-
-		Wrap the search to the beginning of the document if there's no search results in the end of file
-			:set wrapscan
-
-		Export row 18-22 to file
-			:18,22 w! /tmp/filename
-
-		Export row 18-EoF to file
-			:18, w! /tmp/filename
-
-		Import file at cursor
-			:r /tmp/filename
-
-		Search for OLD and replace with NEW at current line
-			I'm riding an OLD bike.
-			:s/OLD/NEW/
-			I'm riding an NEW bike.
-
-		Search and replace globally
-			:s/OLD/NEW/g
-
-		Escape-character
-			I'm riding an O/LD bike.
-			:s/O\/LD/NEW/g
-
-		Enable syntax highlighting
-			:syntax on
-			:syntax enable
-			:syn on
-			:syn off
-
-		Set syntax-language to a specific language
-			:setf c
-			:setf php
-			:setf xml
-		Set UTF-8
-			:set enc=utf-8
+			sudo mount -t cifs -o user=usernamehere,password=passwordhere //192.168.0.1/share /mountingdir
 
 Filetransfer
 	FTP (not SFTP)
@@ -395,6 +344,17 @@ System administration
 	apt-get update
 		Update a installed program
 			sudo apt-get update packetname
+
+	apt list
+		List installed packages
+			sudo apt list --installed
+
+	apt-get remove
+		Remove packet
+			sudo apt-get remove packetname
+				Will remove the binaries, but not the configuration or data files of the package
+			sudo apt-get remove --purge packetname
+				Will remove about everything regarding the package
 
 System User
 	w

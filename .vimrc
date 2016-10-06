@@ -1,3 +1,61 @@
+"==========================
+""vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+"
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+"Plugin 'ascenator/L9', {'name': 'newL9'}
+
+"YCM auto complete
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+"filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"Turn off weird indentation
+filetype plugin indent off
+"
+"Map goto declaration for YCM
+nmap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"==========================
+
+"Functions for moving tabs
 function! MoveTabPageLeft()
     let l:x = tabpagenr()
     if l:x == 0
@@ -35,6 +93,8 @@ endfunction
 
 "Follow indentation
 :set autoindent
+
+filetype indent on
 
 "Set length of a tab
 :set tabstop=4
@@ -162,7 +222,7 @@ vnoremap > >gv
 "Insert at multiple lines
 "Ctrl+V I insert text Esc
 
-"Substitute "foo" for "bar" globally
+"Substitute "foo" for "bar" globally (replace)
 ":%s/foo/bar/g
 
 "Record a macro
@@ -170,6 +230,49 @@ vnoremap > >gv
 "C-a - Increment number
 "q - Stop recording
 "9@a - Playback macro from register "a" 9 times
+
+"Navigate back in history
+"C-o
+
+"Navigate forward in history
+"C-i
+
+"Navigate to BOF
+"gg
+"1g
+
+"Navigate to EOF
+"G
+
+"Close all windows
+":qa
+
+"Switch focus to other window
+"C-ww
+
+"Switch focus to window
+"C-w<Up>
+"C-w<Down>
+"C-w<Left>
+"C-w<Right>
+
+"Switch focus to last window
+"C-wr
+
+"Rotate windows
+"C-wR
+
+"Move the current window to be at the very bottom/top
+"C-wJ
+"C-wK
+
+"Resize height of window
+"C-w+
+"C-w-
+
+"Resize width of window
+"C-w<
+"C-w>
 
 "Find cahracter
 "Hello world
@@ -189,6 +292,7 @@ vnoremap > >gv
 "vim -pN file1 file2 file3
 "vim -d file1 file2 - Compare files in diff mode
 
+"Powerline for Vim
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
