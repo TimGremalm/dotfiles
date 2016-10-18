@@ -173,6 +173,12 @@ File, Search, Find
 				//192.168.0.1/ShareName /mountpoint smbfs uid=UbuntuUserToMapAs,user=WindowsUsername,password=WindowsPassword 0 0
 			sudo mount -t cifs -o user=usernamehere,password=passwordhere //192.168.0.1/share /mountingdir
 
+		SSHFS
+			Mount directory
+				sshfs user@hostname:/path/tobe/shared montingdir/
+			Unmount directory
+				fusermount -u montingdir
+
 Filetransfer
 	FTP (not SFTP)
 		Enter passive mode
