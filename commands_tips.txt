@@ -431,6 +431,9 @@ Network
 
 		Port scan
 			nmap -p22 172.16.0.0/24
+
+		Ping scan
+			nmap -sn 172.16.42.0/24
 	iptables
 		Drop incomming connections from destination address
 			iptables -A INPUT -s 65.55.44.100 -j DROP
