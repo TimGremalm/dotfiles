@@ -179,6 +179,12 @@ File, Search, Find
 			Unmount directory
 				fusermount -u montingdir
 
+	lsof
+		list open files
+
+	qdirstat
+		Qt-based directory statistics: KDirStat
+
 Filetransfer
 	FTP (not SFTP)
 		Enter passive mode
@@ -307,6 +313,9 @@ System administration
 		*Showa available ram
 			topas
 
+	nmon
+		Performance Monitor disk, CPU, memory, network
+
 	ps
 		Show information about processes, owner, runtime
 			ps -ef
@@ -362,6 +371,16 @@ System administration
 			sudo apt-get remove --purge packetname
 				Will remove about everything regarding the package
 
+	dpkg
+		Install packet
+			dpkg -i package-file
+
+		list installed packages
+			dpkg --list
+
+		remove package
+			dpkg -r
+
 System User
 	w
 	who
@@ -406,6 +425,9 @@ Network
 		Shows current listening sockets with PID
 			netstat -Aan | grep LISTEN | more
 
+	tcpdump
+		Dump traffic on a network
+
 	ifconfig
 		Show all ethernet interfaces
 			ifconfig -a
@@ -439,6 +461,9 @@ Network
 			iptables -A INPUT -s 65.55.44.100 -j DROP
 		Drop incomming connections from destination address and port
 			iptables -A INPUT -s 65.55.44.100 -p tcp --destination-port 25 -j DROP
+
+	iftop
+		iftop - display bandwidth usage on an interface by host
 
 System Environment
 	Rehash
@@ -509,6 +534,13 @@ Track errors and Debug
 	tee
 		Read stdin, and write to file, AND at the same time output it to stdout
 			less file.txt|tee copyOfStdIn.txt
+
+	dmesg
+		print kernel mesages
+
+	journalctl
+		Query the systemd journal
+			sudo journalctl
 
 i3
 	dmenu
