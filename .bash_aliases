@@ -16,7 +16,9 @@ alias gsl='git stash list'
 alias gsa='gsa.sh $*'
 
 #Nice quick aliases for common xrandr configurations
-alias laptop='xrandr --output LVDS1 --auto --output VGA1 --off'
-alias monitor='xrandr --output LVDS1 --off --output VGA1 --auto'
-alias dual='xrandr --output LVDS1 --auto --left-of VGA1 --output VGA1 --auto'
+alias laptop='xrandr --output eDP-1 --auto --output VGA-1 --off --output HDMI-1 --off'
+alias monitor='xrandr --output eDP-1 --off --output VGA-1 --auto --output HDMI-1 --off'
+alias dual='xrandr --output eDP-1 --auto --left-of VGA-1 --output VGA-1 --auto --output HDMI-1 --off'
+alias monitorhdmi='xrandr --output eDP-1 --off --output VGA-1 --off --output HDMI-1 --auto'
+alias dualhdmi='xrandr --output eDP-1 --auto --left-of HDMI-1 --output VGA-1 --off --output HDMI-1 --auto'
 
