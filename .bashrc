@@ -33,3 +33,6 @@ if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline
 	. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 fi
 
+export DISPLAY=:0
+#export DISPLAY=192.168.0.10:0.0
+
