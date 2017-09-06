@@ -3,7 +3,7 @@
 export TERM="xterm-256color"
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+	. ~/.bash_aliases
 fi
 
 #Enables terminal to handle Ctrl+S, first check if interactive shell
@@ -29,8 +29,8 @@ set -o vi
 export PATH=$PATH:$HOME/bin
 
 #Enable powerline
-if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
-	. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+if [ -f /home/exxoz/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+	. /home/exxoz/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 fi
 
 export DISPLAY=:0

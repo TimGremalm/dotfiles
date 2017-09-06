@@ -28,9 +28,9 @@ exec --no-startup-id nm-applet
 #/usr/lib/i386-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
 
 #exec --no-startup-id bluetooth-applet
-#exec --no-startup-id /usr/sbin/bluetoothd
-#exec --no-startup-id /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
-#exec --no-startup-id dropbox start
+exec --no-startup-id /usr/sbin/bluetoothd
+exec --no-startup-id /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+exec --no-startup-id dropbox start
 
 #Prevent screen blanking
 exec --no-startup-id xset s 0 0
@@ -39,14 +39,14 @@ exec --no-startup-id xset s off
 #Automount tool for drives
 #exec --no-startup-id udisks-glue
 
-#SOund indicator
-#exec --no-startup-id /usr/lib/i386-linux-gnu/indicator-sound/indicator-sound-service
+#Sound indicator
+exec --no-startup-id /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
 
 #Desktop background for i3
 exec --no-startup-id nitrogen --restore
 
 #Synery remote control
-exec --no-startup-id synergy
+#exec --no-startup-id synergy
 
 #Powerline daemon to cache data
 exec --no-startup-id powerline-daemon -q
