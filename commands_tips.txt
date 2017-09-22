@@ -559,7 +559,6 @@ Textbased browsers
 	lynx
 
 Ubuntu
-	compiz				Grafiska fönster-effekter/funktioner
 	onboard				Onscreen keyboard
 	udisks-glue			Automounter
 
@@ -569,9 +568,12 @@ Server maintinence
 		SAMBA	SAMBA share disk
 		SWAT	Webinterface for samba
 
-CAD
+CAD/CAM
 	kicad				Schematic-editor
 	FreeCad
+	OpenSCAD
+	LinuxCNC
+	HeeksCNC (CAM)
 
 Graphics/Design/Media
 	InkScape
