@@ -593,3 +593,13 @@ Screen blanking
 	xset					Disable X BlankTime (http://www.shallowsky.com/linux/x-screen-blanking.html)
 								xset s off
 
+Raspbian change windows manager to i3
+	Install i3
+		sudo apt-get install i3
+	Add i3 as a session-manager
+		sudo update-alternatives --install "/usr/bin/x-session-manager" "x-session-manager" "/usr/bin/i3" 1
+	Choos i3 as session-manager
+		sudo update-alternatives --config x-session-manager
+
+	sudo update-alternatives --config x-window-manager
+
