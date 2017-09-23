@@ -185,6 +185,9 @@ File, Search, Find
 	qdirstat
 		Qt-based directory statistics: KDirStat
 
+	NCDU
+		TUI-based directory statistics
+
 Filetransfer
 	FTP (not SFTP)
 		Enter passive mode
