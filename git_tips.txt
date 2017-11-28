@@ -45,6 +45,8 @@ Stage
 	git add [file]
 	git add -i
 		Add files to stage interactive
+	git add -p
+		Enter Patch mode just add selected parts of files
 	git add --all|.
 		Stage all untracked files
 	git reset HEAD [file]
@@ -89,6 +91,8 @@ Info
 		Show the two latest commits
 	git log --graph
 		Show a branch-graph
+	git log --oneline --decorate --all --graph
+		Show a compact branch-graph
 	git log -- [file]
 		Show latest commits of file
 	git log -p [file]
@@ -102,6 +106,8 @@ Info
 	git log -1 -p -w --stat 7cefa813
 		Show summary of single commit, with diff
 	git log --grep=search_for_this
+	git log 2.3 --since=2015-06-12 --no-merges --pretty=oneline
+		List comits since date
 	gitk --all
 	git reflog
 		Shows your git-history (pull, jumping between branches, merging etc.)
@@ -113,6 +119,8 @@ Search
 		Show changes on line 3728
 	git grep SearchString -- '*.js'
 		Search for content in filetype js
+	git grep -C 2 SearchString
+		Show 2 lines above and bellow
 
 Files
 	git mv file newname
@@ -131,6 +139,7 @@ Files
 	git clean -f -d
 		Remove untracked files from the working tree (Resets all untracked files to current branch, forced and directories)
 	git clean -f -d -x
+		fdx
 		Remove untracked files from the working tree (Resets all untracked files to current branch, forced and directories)
 		Don’t use the standard ignore rules read from .gitignore
 
