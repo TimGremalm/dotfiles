@@ -6,7 +6,7 @@ import sys, subprocess, argparse, time
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", help="Time to wait between executions", type=float, default=2.0)
-parser.add_argument("command", help="Command and arguments to execute", nargs='*')
+parser.add_argument("command", help="Command and arguments to execute", nargs=argparse.REMAINDER)
 args = parser.parse_args()
 
 while True:
