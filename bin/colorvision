@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Like watch, but in color
+# By Devilholk
+import sys, subprocess, argparse, time
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-n", help="Time to wait between executions", type=float, default=2.0)
+parser.add_argument("command", help="Command and arguments to execute", nargs='*')
+args = parser.parse_args()
+
+while True:
+	proc = subprocess.Popen(args.command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+	p_out, p_err = proc.communicate()
+
+	sys.stderr.write('\x1b[3J\x1b[H\x1b[2JEvery %.1f seconds, execute %r\n\n' % (args.n, args.command))
+
+	sys.stderr.buffer.write(p_err)
+
+	sys.stderr.write('\x1b[0m')
+	sys.stderr.flush()
+
+	sys.stdout.buffer.write(p_out)
+	sys.stdout.flush()
+
+	time.sleep(args.n)
+
