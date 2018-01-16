@@ -4,16 +4,32 @@
 # By Devilholk
 import sys, subprocess, argparse, time
 
+has_inotify=False
+try:
+	import pyinotify
+	has_inotify=True
+except:
+	print('Warning - Could not import pyinotify (https://github.com/seb-m/pyinotify)')
+
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", help="Time to wait between executions", type=float, default=2.0)
+parser.add_argument("-n", '--wait', help="Time to wait between executions", type=float, default=2.0)
+parser.add_argument("-f", '--file', help="File to watch using pyinotify", type=str, default=None)
+if has_inotify:
+	parser.add_argument("-p", '--python', help="Auto execute a python script with inotify", type=str, default=None)
 parser.add_argument("command", help="Command and arguments to execute", nargs=argparse.REMAINDER)
+
 args = parser.parse_args()
 
-while True:
+if has_inotify:
+	if args.python:
+		args.command =  ['python', args.python] + args.command
+		args.file = args.python
+
+def execute_watch(header):
 	proc = subprocess.Popen(args.command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	p_out, p_err = proc.communicate()
 
-	sys.stderr.write('\x1b[3J\x1b[H\x1b[2JEvery %.1f seconds, execute %r\n\n' % (args.n, args.command))
+	sys.stderr.write(header)
 
 	sys.stderr.buffer.write(p_err)
 
@@ -23,5 +39,19 @@ while True:
 	sys.stdout.buffer.write(p_out)
 	sys.stdout.flush()
 
-	time.sleep(args.n)
+if args.file:
+	def handle_event(e):
+		execute_watch('\x1b[3J\x1b[H\x1b[2JOn update of \x1b[1m%s\x1b[0m, execute \x1b[1m%r\x1b[0m | Last run: \x1b[1m%s\x1b[0m\n\n' % (args.file, args.command, time.ctime()))
+
+	handle_event(None)	#One initial fire
+
+	wm = pyinotify.WatchManager()
+	notifier = pyinotify.Notifier(wm)
+	wm.add_watch(args.file, pyinotify.IN_CLOSE_WRITE, proc_fun=handle_event)
+	notifier.loop()
+
+else:
+	while True:
+		execute_watch('\x1b[3J\x1b[H\x1b[2JEvery \x1b[1m%.1f\x1b[0m seconds, execute \x1b[1m%r\x1b[0m\n\n' % (args.wait, args.command))
+		time.sleep(args.wait)
 
