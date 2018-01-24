@@ -30,8 +30,21 @@ Plugin 'tpope/vim-fugitive'
 " different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
-"YCM auto complete
-Plugin 'Valloric/YouCompleteMe'
+"NERDTree - a file system explorer
+Plugin 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+"t opens file in a new tab
+
+"ctrlp - Full path fuzzy file, buffer, mru, tag, ... finder for Vim
+Plugin 'ctrlpvim/ctrlp.vim'
+"c-p Find-mode
+"<c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+
+
+"VimCompletesMe
+Plugin 'ajh17/VimCompletesMe'
+"Faster then YCM
+"Tab, S-Tab to autocomplete
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,9 +53,6 @@ call vundle#end()            " required
 "filetype plugin on
 "Turn off weird indentation
 filetype plugin indent off
-"
-"Map goto declaration for YCM
-nmap <F12> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -72,6 +82,9 @@ function! MoveTabPageRight()
         exe 'tabmove ' . l:x
     endif
 endfunction
+
+"Use UTF-8
+set encoding=utf-8
 
 "Show line-numbering
 :set nu
