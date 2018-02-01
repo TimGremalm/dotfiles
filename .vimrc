@@ -83,8 +83,8 @@ function! MoveTabPageRight()
     endif
 endfunction
 
-"Use UTF-8
-set encoding=utf-8
+" Use UTF-8 without BOM
+set encoding=utf-8 nobomb
 
 "Show line-numbering
 :set nu
