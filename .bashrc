@@ -29,8 +29,8 @@ set -o vi
 export PATH=$PATH:$HOME/bin
 
 #Enable powerline
-if [ -f /home/exxoz/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
-	. /home/exxoz/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+if [ -f $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
+	. $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 fi
 
 export DISPLAY=:0
