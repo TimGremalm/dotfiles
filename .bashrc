@@ -27,6 +27,7 @@ export editor='vim'
 set -o vi
 
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
 
 #Enable powerline
 if [ -f $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
