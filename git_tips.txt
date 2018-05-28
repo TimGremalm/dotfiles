@@ -84,7 +84,7 @@ Get
 Info
 	git status
 	git diff --cached
-		See what you've staged so far
+		Diff staged files to head
 	git log
 		Show latest commits
 	git log -p -2
@@ -119,7 +119,7 @@ Search
 		Show changes on line 3728
 	git grep SearchString -- '*.js'
 		Search for content in filetype js
-	git grep -C 2 SearchString
+	git grep -C2 SearchString
 		Show 2 lines above and bellow
 
 Files
