@@ -214,4 +214,5 @@ exec --no-startup-id powerline-daemon -q
 for_window [title=".* - Mozilla Firefox"] border 1pixel
 for_window [title=".* - Chromium"] border 1pixel
 for_window [title="Terminal"] border 1pixel
+for_window [title=".*eclipse.*"] border 1pixel
 

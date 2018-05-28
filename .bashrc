@@ -22,12 +22,17 @@ LS_COLORS=$LS_COLORS:'di=0;96:'
 export LS_COLORS
 
 export editor='vim'
+export EDITOR='vim'
 
 #Enable vi-editor-mode in bash
 set -o vi
 
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/bin
+
+#Stop warnings about "Couldn't register with accessibility bus"
+#Even without accessibility enabled, many Gnome components try to connect to the AT-SPI bus.
+export NO_AT_BRIDGE=1
 
 #Enable powerline
 if [ -f $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
