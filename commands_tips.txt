@@ -79,6 +79,10 @@ File, Search, Find
 	tar
 		Pack a tar file
 			tar -xvt file.tar
+		Test-extract
+			tar -tvf
+		Extract a tar file
+			tar -xvf
 
 	gzip
 		Compress a file
@@ -147,12 +151,6 @@ File, Search, Find
 	ldd
 		Kolla so-filer beroenen till binär
 		ldd /usr/bin/sh
-
-	lsusb
-		Lista usb-devises
-
-	ls /dev
-		Lista devices under the mountingpoint in the filesystem
 
 	dd
 		Make bakup of sdcard
@@ -226,6 +224,7 @@ Text tools
 			tail -24 file
 
 		Continuesly watch a file and print it
+			tail -f /var/log/auth.log
 
 	head
 		Show first 3 lines of a file
@@ -317,9 +316,6 @@ System administration
 		*Shows IO activity
 		*Showa available ram
 			topas
-
-	nmon
-		Performance Monitor disk, CPU, memory, network
 
 	ps
 		Show information about processes, owner, runtime
@@ -418,24 +414,56 @@ Shell script
 		source script
 
 Network
+	nmon
+		Performance Monitor disk, CPU, memory, network
+
+	iftop
+		iftop - display bandwidth usage on an interface by host
+
+
+	ssh
+		Connect to a ssh server
+			ssh user@host
+
+		Connect to ssh using a different port
+			ssh user@host -p 9022
+
+		Opens a local SOCKS proxy port where the traffic is forwarded through the SSH server
+			ssh user@host -D 8080
+
+		Local Port Forwarding
+			Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side
+			ssh -L sourcePort:forwardToHost:onPort user@host
+			Connect to RDP service on ssh-servers local net
+				ssh -L 8000:local-rdp-host:3389 user@host
+				rdp 127.0.0.1:8000
+
+		Remote Port Forwarding
+			Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side
+			ssh -R sourcePort:forwardToHost:onPort user@host
+			Port forward HTTP server to your computer via SSH server
+				ssh -R 8080:localhost:80 user@host
+
 	telnet
 		Connect to a telnet server
 			telnet host
 
-	netstat
-		netstat -a
-			Shows current listening sockets
+	netcat
+		Connect to a host TCP socket and output the result to STDOUT
+			nc host port
+		Opens a socket for incomming and serve STDIN
+			cat a.txt|nc -l 1234
+			nc localhost 1234 > b.txt
 
 	netstat
+		Shows current listening sockets
+			netstat -a
+
 		Shows current listening sockets with PID
-			netstat -Aan | grep LISTEN | more
+			netstat -anp | grep LISTEN | more
 
 	tcpdump
 		Dump traffic on a network
-
-	ifconfig
-		Show all ethernet interfaces
-			ifconfig -a
 
 	host
 		SHow IP for entry in /etc/hosts
@@ -461,14 +489,27 @@ Network
 
 		Ping scan
 			nmap -sn 172.16.42.0/24
+
+	ifconfig
+		Show all ethernet interfaces
+			ifconfig -a
+
+	ip
+		Show all eternet interfaces
+			ip addr
+		Bring interface up/down
+			sudo ip link set dev eth0 up
+			sudo ip link set dev eth0 down
+		Add IP on interface
+			sudo ip address add 192.168.0.1/24 broadcast 192.168.0.255 dev eth0
+		Remove IP on interface
+			sudo ip address del 192.168.0.1/24 scope global dev eth0
+
 	iptables
 		Drop incomming connections from destination address
 			iptables -A INPUT -s 65.55.44.100 -j DROP
 		Drop incomming connections from destination address and port
 			iptables -A INPUT -s 65.55.44.100 -p tcp --destination-port 25 -j DROP
-
-	iftop
-		iftop - display bandwidth usage on an interface by host
 
 System Environment
 	Rehash
@@ -540,12 +581,34 @@ Track errors and Debug
 		Read stdin, and write to file, AND at the same time output it to stdout
 			less file.txt|tee copyOfStdIn.txt
 
+	lsusb
+		Lista usb-devises
+
+	ls -ltr /dev
+		List last connected devices
+
 	dmesg
 		print kernel mesages
+
+	systemctl
+		Show services and system
+			sudo systemctl
+		Stop service
+			sudo systemctl stop systemd-resolved.service
+		Disable service
+			sudo systemctl disable systemd-resolved.service
+
+	udevadm
+		Continuesly listen to kernel uevents and events
+			udevadm monitor
 
 	journalctl
 		Query the systemd journal
 			sudo journalctl
+		Show messages for the specified systemd unit UNIT (such as a service unit)
+			journalctl -u dnsmasq.service
+		Continuesly tail journal
+			sudo journalctl -f
 
 i3
 	dmenu
