@@ -179,6 +179,10 @@ File, Search, Find
 			Unmount directory
 				fusermount -u montingdir
 
+
+	fuser
+		identify processes using file
+
 	lsof
 		list open files
 
@@ -187,6 +191,9 @@ File, Search, Find
 
 	NCDU
 		TUI-based directory statistics
+
+	gnome-open / xdg-open
+		opens a file or URL in the user's preferred application
 
 Filetransfer
 	FTP (not SFTP)
@@ -382,6 +389,9 @@ System administration
 		remove package
 			dpkg -r
 
+		List contents of a package
+			dpkg -L package-name
+
 System User
 	w
 	who
@@ -407,7 +417,7 @@ Shell script
 	PID for current shell
 		$$
 
-	Starta script asynchronous with &
+	Start a script asynchronous with &
 		script.sh &
 
 	Run a script in current shell, without forking a new one (great for reading config files)
