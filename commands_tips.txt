@@ -392,6 +392,16 @@ System administration
 		List contents of a package
 			dpkg -L package-name
 
+Window and events
+	xev
+		Test X events
+
+	xprop
+		Select a window with the mouse cursor, display propertys of X window (Title, Class, hWnd).
+
+	xwininfo
+		Select a window with the mouse cursor, display propertys of X window.
+
 System User
 	w
 	who
