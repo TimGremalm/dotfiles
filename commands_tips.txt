@@ -464,6 +464,10 @@ Network
 			Port forward HTTP server to your computer via SSH server
 				ssh -R 8080:localhost:80 user@host
 
+	rsync
+		Sync directory on localhost to target over ssh
+			rsync -avz -e ssh username@192.168.0.1:/home/username/dir /home/username/dir
+
 	telnet
 		Connect to a telnet server
 			telnet host
@@ -608,7 +612,10 @@ Track errors and Debug
 		List last connected devices
 
 	dmesg
-		print kernel mesages
+		dmesg
+			print kernel mesages
+		dmesg -w
+			Continuesly listen for kernel mesages
 
 	systemctl
 		Show services and system
