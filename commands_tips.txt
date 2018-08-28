@@ -465,8 +465,10 @@ Network
 				ssh -R 8080:localhost:80 user@host
 
 	rsync
-		Sync directory on localhost to target over ssh
+		Sync directory from target to local host
 			rsync -avz -e ssh username@192.168.0.1:/home/username/dir /home/username/dir
+		Sync directory from local host to on target
+			rsync -avz /home/username/dir username@192.168.0.1:/home/username/dir
 
 	telnet
 		Connect to a telnet server
