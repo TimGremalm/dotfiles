@@ -83,8 +83,13 @@ function! MoveTabPageRight()
     endif
 endfunction
 
-" Use UTF-8 without BOM
+"Use UTF-8 without BOM
 set encoding=utf-8 nobomb
+
+"Turn off backupfiles and lockfiles
+set nobackup
+set noswapfile
+set nowritebackup
 
 "Show line-numbering
 :set nu
@@ -163,8 +168,8 @@ filetype indent on
 :nmap <c-l> :wincmd l<CR>
 
 "Split pane with open prompt for filename, leave empty for a new file
-:map <c-s> :split
-:map <c-d> :vsplit
+":map <c-s> :split
+":map <c-d> :vsplit
 ":nmap " :split
 ":nmap % :vsplit
 
@@ -235,14 +240,14 @@ vnoremap > >gv
 "Insert at multiple lines
 "Ctrl+V I insert text Esc
 
-"Substitute "foo" for "bar" globally (replace)
+"Substitute foo for bar globally (replace)
 ":%s/foo/bar/g
 
 "Record a macro
-"qa - Start recording macro to register "a"
+"qa - Start recording macro to register a
 "C-a - Increment number
 "q - Stop recording
-"9@a - Playback macro from register "a" 9 times
+"9@a - Playback macro from register a 9 times
 
 "Navigate back in history
 "C-o
@@ -289,11 +294,11 @@ vnoremap > >gv
 
 "Find cahracter
 "Hello world
-"fw -find character "w"
+"fw -find character w
 
 "Find character while replacing
 "Hello world
-"cfo - change everything up to character "o"
+"cfo - change everything up to character o
 
 "Work with vim grammer
 "y2w - yank two words
