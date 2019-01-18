@@ -39,7 +39,7 @@ File, Search, Find
 		Find with wildcard
 			find . -name '*find*' -print
 
-		FInd files older than 24 hours
+		Find files older than 24 hours
 			find . -ctime 1 -print
 
 		Find large files over 100MB
@@ -112,6 +112,15 @@ File, Search, Find
 
 	Grep case-insensative
 		grep -i sökbegrepp
+
+	Grep show lines above result
+		grep -A3 searchterm
+
+	Grep show lines below result
+		grep -B3 searchterm
+
+	Grep show lines above and below result
+		grep -C3 searchterm
 
 	tr
 		Reaplace characters
