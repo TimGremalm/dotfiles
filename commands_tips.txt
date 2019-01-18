@@ -706,3 +706,11 @@ Raspbian change windows manager to i3
 
 	sudo update-alternatives --config x-window-manager
 
+Python
+	Start a webserver in current directory
+		python3 -m SimpleHTTPServer
+
+	Python interactive
+		python3 -i
+		ipython3
+
