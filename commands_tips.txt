@@ -666,7 +666,7 @@ Textbased browsers
 
 Ubuntu
 	onboard				Onscreen keyboard
-	udisks-glue			Automounter
+	udisks-glue			Auto mounter
 
 Server maintinence
 	Ajenti		http-admin
@@ -690,11 +690,17 @@ Graphics/Design/Media
 Office
 	libre office
 	okular PDF-viewer
-	Octave				MatLab-clone
+	Octave
 
 Screen blanking
 	xset					Disable X BlankTime (http://www.shallowsky.com/linux/x-screen-blanking.html)
 								xset s off
+
+xrandr
+	ARandR: Another XRandR GUI monitor screen
+
+Double Commander
+	file manager with two panels side by side. Inspired by Total Commander.
 
 Raspbian change windows manager to i3
 	Install i3
