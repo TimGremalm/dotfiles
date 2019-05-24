@@ -1,8 +1,13 @@
 <keymap version="1" name="Visual Studio copy" parent="Visual Studio">
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl f4" />
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
   <action id="Diff.NextChange" />
   <action id="Diff.PrevChange" />
   <action id="EditorMoveToPageBottom" />
   <action id="EditorMoveToPageTop" />
+  <action id="EditorSelectWord" />
   <action id="JumpToLastChange">
     <keyboard-shortcut first-keystroke="alt left" />
   </action>
