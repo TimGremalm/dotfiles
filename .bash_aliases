@@ -1,9 +1,13 @@
+#Short useful
 alias q='exit'
 alias h='history'
 alias lsd='ls -l|grep "^d" | more'
 alias cls='clear'
 alias p='ping -c4 google.se'
 alias vi='vim $@'
+
+#Longer more verbose helps when searching
+alias vs_code=code
 
 #Git aliases
 alias gs='git status'
@@ -21,4 +25,13 @@ alias monitor='xrandr --output eDP-1 --off --output VGA-1 --auto --output HDMI-1
 alias dual='xrandr --output eDP-1 --auto --left-of VGA-1 --output VGA-1 --auto --output HDMI-1 --off'
 alias monitorhdmi='xrandr --output eDP-1 --off --output VGA-1 --off --output HDMI-1 --auto'
 alias dualhdmi='xrandr --output eDP-1 --auto --left-of HDMI-1 --output VGA-1 --off --output HDMI-1 --auto'
+
+#Colorful file utils
+alias grep='grep --color=always'
+alias ls='ls --color=always'
+alias ll='ls --color=always -l'
+alias g='grep --color=always --after-context=1 --before-context=1'
+alias gg='grep --color=always --after-context=2 --before-context=2'
+alias ggg='grep --color=always --after-context=3 --before-context=3'
+alias gggg='grep --color=always --after-context=4 --before-context=4'
 
