@@ -34,4 +34,5 @@ alias g='grep --color=always --after-context=1 --before-context=1'
 alias gg='grep --color=always --after-context=2 --before-context=2'
 alias ggg='grep --color=always --after-context=3 --before-context=3'
 alias gggg='grep --color=always --after-context=4 --before-context=4'
+alias dmesg='dmesg --color=always'
 
