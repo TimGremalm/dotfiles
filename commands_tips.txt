@@ -700,6 +700,13 @@ Office
 	okular PDF-viewer
 	Octave
 
+Font
+	fclist
+		fclist
+			List all fonts available
+		fc-list :scalable=true:spacing=mono: family
+			List all fonts that is monospace
+
 Screen blanking
 	xset					Disable X BlankTime (http://www.shallowsky.com/linux/x-screen-blanking.html)
 								xset s off
