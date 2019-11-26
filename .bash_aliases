@@ -27,8 +27,8 @@ alias monitorhdmi='xrandr --output eDP-1 --off --output VGA-1 --off --output HDM
 alias dualhdmi='xrandr --output eDP-1 --auto --left-of HDMI-1 --output VGA-1 --off --output HDMI-1 --auto'
 
 #Colorful file utils
-alias grep='grep --color=always'
-alias ls='ls --color=always'
+#alias grep='grep --color=always'
+#alias ls='ls --color=always'
 alias ll='ls --color=always -l'
 alias g='grep --color=always --after-context=1 --before-context=1'
 alias gg='grep --color=always --after-context=2 --before-context=2'
