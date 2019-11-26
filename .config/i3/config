@@ -176,7 +176,7 @@ bindsym $mod+Shift+Control+Right move workspace to output right
 #Most of the rows here is just a reminder and have to be conmfigured individually per host
 
 #network manager
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 #keyboard indicator
 #/usr/lib/i386-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk
@@ -187,15 +187,17 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id sleep 3 && dropbox start
 
 #Prevent screen blanking
-exec --no-startup-id xset s off
-exec --no-startup-id xset -dpms
-exec --no-startup-id xset s noblank
+#exec --no-startup-id xset s off
+#exec --no-startup-id xset -dpms
+#exec --no-startup-id xset s noblank
 
 #Turn on numlock
 #exec --no-startup-id numlockx on
 
 #Set position of monitors
-#exec --no-startup-id xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 3840x0 --rotate left --output DP-5 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --off
+#exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 3000x0 --rotate normal --output DP-5 --mode 1920x1080 --pos 0x0 --rotate left --output DP-4 --off --output DP-3 --mode 1920x1080 --pos 1080x0 --rotate normal --output DP-2 --off --output DP-1 --off --output DP-0 --mode 1920x1080 --pos 1080x1080 --rotate normal
+#Map touch screen
+#exec --no-startup-id xinput --map-to-output 9 DP-0
 
 #Automount tool for drives
 #exec --no-startup-id udisks-glue
@@ -212,6 +214,7 @@ exec --no-startup-id xset s noblank
 
 #Powerline daemon to cache data
 #exec --no-startup-id powerline-daemon -q
+exec --no-startup-id ~/.config/i3/workspacespecific.sh >> ~/.config/i3/workspacespecific.log
 
 #Set thin border and no titlebar for webbrowser and terminal
 for_window [title=".* - Mozilla Firefox"] border 1pixel
