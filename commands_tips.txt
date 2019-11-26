@@ -660,6 +660,14 @@ i3
 		Show dmenu in bottom of screen
 			echo menu|dmenu -b|cat
 
+Background image
+	nitrogen
+		nitrogen --restore
+			restores previously set background image and run
+	feh
+		feh --bg-fill ~/Pictures/background.jpg
+			set background image to specific file
+
 Textbased browsers
 	w3m (vim-like)
 	lynx
@@ -695,6 +703,17 @@ Office
 Screen blanking
 	xset					Disable X BlankTime (http://www.shallowsky.com/linux/x-screen-blanking.html)
 								xset s off
+
+Xorg
+	DISPLAY
+		echo $DISPLAY
+			print out current display
+		DISPLAY=:1 xterm
+			set variable to display :1 (main x screen) and start xterm there
+		DISPLAY=:1.1 xterm
+			set variable to display :1.1 (secondary x screen) and start xterm there
+		DISPLAY=:1.1 i3
+			set variable to display :1.1 (secondary x screen) and start i3 window manager there
 
 xrandr
 	ARandR: Another XRandR GUI monitor screen
