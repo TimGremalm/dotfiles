@@ -61,6 +61,6 @@ if [ "$DISPLAY" == "$secondary" ]; then
 	# Kill old xterm
 	pkill xterm
 	# Open new xterm and create/attach session secondary
-	DISPLAY=:1.1 xterm -e tmux new-session -A -s secondary &
+	DISPLAY=:1.1 xterm -fa Consolas -fs 7 -e tmux new-session -A -s secondary &
 fi
 
