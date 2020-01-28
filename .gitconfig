@@ -1,9 +1,3 @@
-[gui]
-[i18n]
-	commitEncoding = UTF-8
-	logOutputEncoding = UTF-8
-[commit]
-	template = ~/commit-template.txt
 [user]
 	name = Tim Gremalm
 	email = tim@gremalm.se
@@ -15,7 +9,7 @@
 [difftool "DiffVim"]
 	cmd = vimdiff \"$LOCAL\" \"$REMOTE\"
 [difftool "DiffMeldmerge"]
-	cmd = 'c:/meld/meld.exe' \"$LOCAL\" \"$REMOTE\"
+	cmd = 'meld' \"$LOCAL\" \"$REMOTE\"
 
 [merge]
 	tool = MergeVim
@@ -26,7 +20,7 @@
 [mergetool "MergeVim"]
 	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [mergetool "MergeMeldmerge"]
-	cmd = 'C:/meld/meld.exe' \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+	cmd = 'meld' \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
 
 [alias]
 	backup = push backup --all -f
