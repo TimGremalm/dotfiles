@@ -29,5 +29,5 @@
 	quotepath = off
 	editor = vim
 	autocrlf = false
-	excludesfile =  ~/gitignore_global.txt
+	excludesfile =  ~/.config/git/gitignore_global.txt
 
