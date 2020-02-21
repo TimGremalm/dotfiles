@@ -1,8 +1,4 @@
-# Make sure environemnt variables is set
-ifndef XDG_CONFIG_HOME
-	export XDG_CONFIG_HOME := $(HOME)/.config
-endif
-#${info XDG_CONFIG_HOME is [${XDG_CONFIG_HOME}]}
+# Makefile for Tim Gremalms dotfiles https://github.com/timgremalm/dotfiles
 
 default: help
 	$(info )
@@ -12,7 +8,7 @@ packages_network = openssh-server nmap net-tools ngrep iftop nmon wget
 packages_file = ncdu sshfs
 packages_tool = tmux htop w3m
 packages_development = git gitk meld python3 python3-dev ipython3 python3-numpy python3-dbus python3-pytest
-packages_vim = vim vim-airline vim-airline-themes vim-fugitive vim-youcompleteme
+packages_vim = vim vim-airline vim-airline-themes vim-youcompleteme
 packages_cozy = i3 feh inkscape doublecmd-qt qdirstat
 help:
 	$(info )
@@ -41,10 +37,24 @@ vanilla: check_stow_dependencies
 	$(info )
 	$(info Stow vanilla)
 	stow --target $(HOME) bash --verbose
+	stow --target $(HOME) fonts --verbose
+	stow --target $(HOME) inputrc --verbose
+	stow --target $(HOME) vim --verbose
+	stow --target $(HOME) git --verbose
+	stow --target $(HOME) tips --verbose
+	stow --target $(HOME) tmux --verbose
+	stow --target $(HOME) tools --verbose
 
 unstow_vanilla:
 	$(info unstow_vanilla)
 	stow --delete --target $(HOME) bash --verbose
+	stow --delete --target $(HOME) fonts --verbose
+	stow --delete --target $(HOME) inputrc --verbose
+	stow --delete --target $(HOME) vim --verbose
+	stow --delete --target $(HOME) git --verbose
+	stow --delete --target $(HOME) tips --verbose
+	stow --delete --target $(HOME) tmux --verbose
+	stow --delete --target $(HOME) tools --verbose
 
 cozy: check_stow_dependencies
 	$(info )
