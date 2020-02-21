@@ -401,6 +401,11 @@ System administration
 		List contents of a package
 			dpkg -L package-name
 
+
+	usermod
+		Append serial group to user
+			usermod -a -G dialout username
+
 Window and events
 	xev
 		Test X events
