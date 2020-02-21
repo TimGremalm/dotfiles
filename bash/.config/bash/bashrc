@@ -2,8 +2,8 @@
 #Enable a more color rich terminal experience
 export TERM="xterm-256color"
 
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+if [ -f ~/.config/bash/bash_aliases ]; then
+	. ~/.config/bash/bash_aliases
 fi
 
 #Enables terminal to handle Ctrl+S, first check if interactive shell
