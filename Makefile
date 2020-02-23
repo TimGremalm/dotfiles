@@ -38,6 +38,7 @@ vanilla: check_stow_dependencies
 	$(info vim add plugins)
 	vam install youcompleteme
 	vam install ctrlp
+	git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree || echo "Repo already exist"
 	$(info )
 	$(info Stow vanilla)
 	stow --target $(HOME) bash --verbose
