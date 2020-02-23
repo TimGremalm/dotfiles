@@ -51,7 +51,6 @@ vanilla: check_stow_dependencies
 	stow --target $(HOME) tools
 
 unstow_vanilla:
-	$(info unstow_vanilla)
 	stow --delete --target $(HOME) bash
 	stow --delete --target $(HOME) fonts
 	stow --delete --target $(HOME) inputrc
@@ -69,9 +68,11 @@ cozy: check_stow_dependencies
 	stow --target $(HOME) pycharm
 	stow --target $(HOME) weechat
 
-check_stow_dependencies:
-	bash dependency_checkinstall.sh stow
+unstow_cozy:
 	stow --delete --target $(HOME) i3
 	stow --delete --target $(HOME) pycharm
 	stow --delete --target $(HOME) weechat
+
+check_stow_dependencies:
+	bash dependency_checkinstall.sh stow
 
