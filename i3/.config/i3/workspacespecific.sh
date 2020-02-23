@@ -24,7 +24,7 @@ if [ "$DISPLAY" == "$main" ]; then
 	#exec --no-startup-id bluetooth-applet
 	#exec --no-startup-id /usr/sbin/bluetoothd
 	#exec --no-startup-id /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
-	dropbox start &
+	#dropbox start &
 
 	#Prevent screen blanking
 	xset s off &
@@ -47,13 +47,10 @@ if [ "$DISPLAY" == "$main" ]; then
 
 	#Desktop background for i3
 	#nitrogen --restore &
-	feh --bg-fill ~/Pictures/Apollo_17_Moon_Panorama.jpg
+	#feh --bg-fill ~/Pictures/Apollo_17_Moon_Panorama.jpg
 
 	#Synery remote control
 	#exec --no-startup-id synergy
-
-	#Powerline daemon to cache data
-	powerline-daemon -q &
 fi
 
 if [ "$DISPLAY" == "$secondary" ]; then
