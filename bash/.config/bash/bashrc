@@ -27,6 +27,60 @@ export EDITOR='vim'
 #Enable vi-editor-mode in bash
 set -o vi
 
+# Powerline prompt PS1
+PROMPT_COMMAND=__prompt_command # Func to gen PS1 after CMDs
+__prompt_command() {
+	local EXIT="$?"
+	PS1=""
+	local BRANCH=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+	local ResetFormat='\[\e[0m\]'
+	local HostBG='\[\e[48;5;166m\]'
+	local HostFG='\[\e[38;5;166m\]'
+	local HostTX='\[\e[38;5;215m\]'
+	local UserBG='\[\e[48;5;31m\]'
+	local UserFG='\[\e[38;5;31m\]'
+	local UserTX='\[\e[38;5;117m\]'
+	local BranchBG='\[\e[48;5;236m\]'
+	local BranchFG='\[\e[38;5;236m\]'
+	local BranchTX='\[\e[38;5;244m\]'
+	local CurdirBG='\[\e[48;5;240m\]'
+	local CurdirFG='\[\e[38;5;240m\]'
+	local CurdirTX='\[\e[38;5;249m\]'
+	local ExitcodeBG='\[\e[48;5;52m\]'
+	local ExitcodeFG='\[\e[38;5;52m\]'
+	local ExitcodeTX='\[\e[38;5;211m\]'
+	# Hostname
+	PS1+="${HostBG}${HostTX}"
+	PS1+=" ⌂ \h "
+	PS1+="${HostFG}"
+	# Username
+	PS1+="${UserBG}${UserTX}"
+	PS1+=" \u "
+	PS1+="${UserFG}"
+	# Git branch
+	if [ ! "${BRANCH}" == "" ]; then
+		PS1+="${BranchBG}${BranchTX}"
+		PS1+="  $BRANCH "
+		PS1+="${BranchFG}"
+	fi
+	# Current directory
+	PS1+="${CurdirBG}${CurdirTX}"
+	PS1+=" \w "
+	PS1+="${CurdirFG}"
+	# If we have a non zero exit code, write it out
+	if [ $EXIT != 0 ]; then
+		PS1+="${ExitcodeBG}${ExitcodeTX}"
+		PS1+=" $EXIT "
+		PS1+="${ExitcodeFG}"
+	fi
+	# Reset formating, and end prompt with a space
+	if [ $EXIT != 0 ]; then
+		PS1+="${ResetFormat}${ExitcodeFG} ${ResetFormat}"
+	else
+		PS1+="${ResetFormat}${CurdirFG} ${ResetFormat}"
+	fi
+}
+
 #Local binaries
 export PATH=$PATH:$HOME/.local/bin
 
@@ -64,7 +118,7 @@ export NO_AT_BRIDGE=1
 
 #export DISPLAY=:0
 #export DISPLAY=:1					X screen main
-#export DISPLAY=:1.1				X screen secondary 
+#export DISPLAY=:1.1				X screen secondary
 #export DISPLAY=192.168.0.10:0.0	X screen used if SSH forwarding X window
 
 #For adding python libraries
