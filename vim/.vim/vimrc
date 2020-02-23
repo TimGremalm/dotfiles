@@ -314,3 +314,12 @@ vnoremap > >gv
 "set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 "Replaced by vim-airline
 
+" Airline
+let g:airline_theme='badwolf'
+" Enable powerline arrows
+let g:airline_powerline_fonts=1
+" Enable airline on top tab buffer bar
+let g:airline#extensions#tabline#enabled=1
+" Show select cound of rows/cloumns in visual mode
+set showcmd
+
