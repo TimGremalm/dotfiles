@@ -8,7 +8,7 @@ packages_network = openssh-server nmap net-tools ngrep iftop nmon wget
 packages_file = ncdu sshfs tree mlocate
 packages_tool = tmux htop w3m screen
 packages_development = git gitk meld python3 python3-pip python3-dev ipython3 python3-numpy python3-dbus python3-pytest
-packages_vim = vim vim-airline vim-airline-themes vim-youcompleteme
+packages_vim = vim vim-addon-manager vim-airline vim-airline-themes vim-youcompleteme vim-ctrlp
 packages_cozy = i3 feh inkscape doublecmd-qt qdirstat
 help:
 	$(info )
@@ -34,6 +34,10 @@ vanilla: check_stow_dependencies
 	bash dependency_checkinstall.sh $(packages_tool)
 	bash dependency_checkinstall.sh $(packages_development)
 	bash dependency_checkinstall.sh $(packages_vim)
+	$(info )
+	$(info vim add plugins)
+	vam install youcompleteme
+	vam install ctrlp
 	$(info )
 	$(info Stow vanilla)
 	stow --target $(HOME) bash --verbose
