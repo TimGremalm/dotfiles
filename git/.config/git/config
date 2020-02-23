@@ -1,0 +1,33 @@
+[user]
+	name = Tim Gremalm
+	email = tim@gremalm.se
+
+[diff]
+	tool = DiffVim
+[difftool]
+	prompt = false
+[difftool "DiffVim"]
+	cmd = vimdiff \"$LOCAL\" \"$REMOTE\"
+[difftool "DiffMeldmerge"]
+	cmd = 'meld' \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+	tool = MergeVim
+[mergetool]
+	prompt = false
+	keepBackup = false
+	keepTemporaries = false
+[mergetool "MergeVim"]
+	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[mergetool "MergeMeldmerge"]
+	cmd = 'meld' \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+
+[alias]
+	backup = push backup --all -f
+	get = fetch --multiple origin
+[core]
+	quotepath = off
+	editor = vim
+	autocrlf = false
+	excludesfile =  ~/.config/git/gitignore_global.txt
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+default_if=$(ip route list | awk '/^default/ {print $5}')
+localip=$(ip -o -f inet addr show $default_if | awk '{print $4}')
+localnet=$(echo $localip|sed -r 's/([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)([0-9]{1,3})/\10/')
+echo "Port scan $localnet on port 22 -p22"
+nmap -p22 $localnet
+

@@ -1,0 +1,753 @@
+File, Search, Find
+	ls
+		Show all files, including hidden dot-files (.file)
+			ls -la
+
+		Show only files (subtract directories)
+			ls -l | grep -v drw
+
+		Show only directories
+			ls -l | grep drw
+
+		Show human readable
+			ls -lh
+
+	chmod
+		set's file premissions
+		chmod OwnerGroupOther file
+		chmod 744 file
+		chmod o=r file
+			other-premissions will be set to read, if write or execute is set it will be removed
+		chmod o+x file
+			adds execute-premissions for other on file
+		chmod ug=rwx file
+			sets rwx-premissions for owner and group
+	xxd
+		xxd file
+		Show hexdump of file
+	chown
+		Sets ownership of a file
+		chown user:group file
+
+	find
+		Find for files named x under current directory
+			find . -name smb.conf -print
+
+		Find for files case insensative
+			find . -iname smb.conf -print
+
+		Find with wildcard
+			find . -name '*find*' -print
+
+		Find files older than 24 hours
+			find . -ctime 1 -print
+
+		Find large files over 100MB
+			find ./ -size +10000 -exec ls -lh "{}" \;
+
+		Find files and in thos files grep after searchterm
+			find ./my_lib/* -type f -exec grep -l searchterm {} \;
+
+		Find files but exlude directory A
+			find -type f -not -path "./A/*"
+
+		Find files with multiple name arguments
+			find . -name "*.bak" -name "*2013*"
+
+	touch
+		Touch a file, set modified-date to now, if no file exists a new file will be created
+
+	tree
+		Lists a tree with subdirectories
+
+	file
+		file fileame
+		Shows information about the file, ex: ubuntu.txt: ISO-8859 text, with CRLF line terminators
+
+	gunzip
+		Unzip a file
+			gunzip file.gz
+
+	gzip
+		Compress files to a zip
+			gzip files
+
+	gzcat
+		List content of a zip
+			gzcat file.gz
+
+	tar
+		Pack a tar file
+			tar -xvt file.tar
+		Test-extract
+			tar -tvf
+		Extract a tar file
+			tar -xvf
+
+	gzip
+		Compress a file
+			gzip file.jpg
+
+	pwd
+		Stdout current directory
+			pwd
+
+	cd
+		Jump to home directory
+			cd
+
+		Jump to previous directory
+			cd -
+
+	mkdir
+		Create directories recursivly
+			mkdir -p /tmp/mydirectory/dir1/dir2/dir3
+
+		Create directory and set the user permissions directly
+			mkdir -m 777 /tmp/mydirectory
+
+	grep
+		Invert search, remove all occurancess of searchterm
+			grep -v searchterm
+
+	Grep case-insensative
+		grep -i sökbegrepp
+
+	Grep show lines above result
+		grep -A3 searchterm
+
+	Grep show lines below result
+		grep -B3 searchterm
+
+	Grep show lines above and below result
+		grep -C3 searchterm
+
+	tr
+		Reaplace characters
+		echo "Hello" | tr "A-Za-z" "a-zA-Z"
+		hELLO
+
+	sort
+		Sort text
+		sort -n
+			Sorterar efter siffror
+		sort -r
+			Reverse
+
+	uniq
+		Remove dupluicate rows
+			sort a.txt|uniq
+		Cound duplicates
+			uniq -c
+
+	du
+		Show size of a file
+			du file
+		Summarize the size of a complete directory
+			du -hs /usr
+		Human readable
+			du -h file
+
+	df
+		Show physical and remote mounting point and how much free space there is left
+			df -gt
+
+		Show human readable
+			df -h
+
+		On older Unix versions
+			df -k
+	ldd
+		Kolla so-filer beroenen till binär
+		ldd /usr/bin/sh
+
+	dd
+		Make bakup of sdcard
+			dd if=/dev/sdb of=backup.img bs=4M
+
+		Restore backup
+			dd if=backup.img of=/dev/sdb bs=4M
+
+	mount
+		Mount ISO-file
+			sudo mount -o loop ~/file.iso /mntpoint
+
+		Mount Windows share via samba
+			sudo apt-get install samba
+			alternative sudo apt-get install samba smbfs
+
+			edit /etc/fstab and add in the end:
+				//192.168.0.1/ShareName /mountpoint smbfs uid=UbuntuUserToMapAs,user=WindowsUsername,password=WindowsPassword 0 0
+			sudo mount -t cifs -o user=usernamehere,password=passwordhere //192.168.0.1/share /mountingdir
+			sudo mount -t cifs -o user=usernamehere,password=passwordhere,forceuid,gid=localgroup,uid=localuser //192.168.0.1/share /mountingdir
+				ignore any uid provided by the server for files and directories and to always assign the owner to be the value of the uid-option
+
+		SSHFS
+			Mount directory
+				sshfs user@hostname:/path/tobe/shared montingdir/
+			Unmount directory
+				fusermount -u montingdir
+
+
+	fuser
+		identify processes using file
+
+	lsof
+		list open files
+
+	qdirstat
+		Qt-based directory statistics: KDirStat
+
+	NCDU
+		TUI-based directory statistics
+
+	gnome-open / xdg-open
+		opens a file or URL in the user's preferred application
+
+Filetransfer
+	FTP (not SFTP)
+		Enter passive mode
+			passive
+
+		Enter passive mode (Windows):
+			literal pasv
+
+		Set binary mode
+			bin
+
+		Get multiple files
+			mget *.txt
+
+		Send multiple files
+			mput *.txt
+
+		No questions
+			ftp -i host
+
+	uustat
+		List transfer jobs in the queue
+			uustat -a
+
+		Cancel job
+			uustat -kill JobNumber
+
+		Cancel all jobs
+			uucancel
+
+Text tools
+	tail
+		Output the 24 last lines of a file (useful for logfiles)
+			tail -24 file
+
+		Continuesly watch a file and print it
+			tail -f /var/log/auth.log
+
+	head
+		Show first 3 lines of a file
+			head -3 file
+
+	wc
+		Show word count, and lines
+			wc file
+
+		Show the number of lines in file
+			wc -l file
+
+	awk
+		Output row number 10 in file1
+			awk 'NR==10' file1
+
+	cut
+		Cut text via delimiter plus sign
+			cut -d+ -f4
+
+		Cut text by column 2-4
+			cut -c 2-4 file
+
+		Split environmentvariable PATH (Windows)
+			echo %PATH%|cut -d";" -f1-2
+
+		Split environmentvariable PATH (Unix-like)
+			echo %PATH%|cut -d":" -f1-2
+
+	paste
+		Paste files, column by column (horizontally)
+			paste file1 file2 file3>fileout
+
+	Use other delimiter then " "
+		paste -d"!" file1 file2 file3>fileout
+
+	cat
+		Outoput text via stdout
+			cat file
+
+	banner
+		Show text in a big header, ascii art style
+			banner Hello world!
+
+	diff
+		Outputs the diff between files
+			diff fil1 fil2
+
+		Outputs the diff between files, don't count white space
+			diff -b fil1 fil2
+	vimdiff
+		Graphical diff view in vim
+
+Printer
+	Print file
+		lp file
+
+Cammand history in shell
+	history
+		Shows history of the latest run commands
+			history
+
+		Run command number 12 in the command history
+			!12
+
+		Search after a command in the history and run it
+			!grep
+
+		Run latest command
+			!!
+
+System time/date
+	date
+		Show date and time
+			date
+
+	cal
+		Show graphical calendar, ascii art style
+			cal
+
+	cat /etc/*-release
+		Output what linux-distro is running
+
+System administration
+	topas/top/htop
+		*Shows processes and their CPU usage
+		*Shows CPU time to Kernal, User, Idle, Wait
+		*Shows diskusage
+		*Shows IO activity
+		*Showa available ram
+			topas
+
+	ps
+		Show information about processes, owner, runtime
+			ps -ef
+
+		Show process for PID
+			ps -f -T12345
+
+		Only list child processes for current shell ($$ is the current shells PID)
+			ps -f -T$$
+
+		List processes run by users
+			ps -f -uUsr1,Usr2
+
+	kill
+		Kill a process with signal number 9, not nice
+			kill -9 PID
+
+		Kill a process and start a new process with the same PID (hangup & continue)
+			kill -HUP PID
+
+		Signal number	Usage
+		1 				HUP (hang up)
+		2 				INT (interrupt)
+		3 				QUIT (quit)
+		6 				ABRT (abort)
+		9 				KILL (non-catchable, non-ignorable kill)
+		14 				ALRM (alarm clock)
+		15 				TERM (software termination signal)
+		[http://www.cyberciti.biz/faq/howto-kill-unix-process-with-kill-command/ http://www.cyberciti.biz/faq/howto-kill-unix-process-with-kill-command/]
+
+	pgrep
+		Grep for precesses, short for ps -ef|grep processname
+
+	pkill
+		Grep for process and kill direct
+
+	apt-get install
+		Get and install a program for Debian based systems
+			sudo apt-get install packetname
+
+	apt-get update
+		Update a installed program
+			sudo apt-get update packetname
+
+	apt list
+		List installed packages
+			sudo apt list --installed
+
+	apt-get remove
+		Remove packet
+			sudo apt-get remove packetname
+				Will remove the binaries, but not the configuration or data files of the package
+			sudo apt-get remove --purge packetname
+				Will remove about everything regarding the package
+
+	dpkg
+		Install packet
+			dpkg -i package-file
+
+		list installed packages
+			dpkg --list
+
+		remove package
+			dpkg -r
+
+		List contents of a package
+			dpkg -L package-name
+
+
+	usermod
+		Append serial group to user
+			usermod -a -G dialout username
+
+Window and events
+	xev
+		Test X events
+
+	xprop
+		Select a window with the mouse cursor, display propertys of X window (Title, Class, hWnd).
+
+	xwininfo
+		Select a window with the mouse cursor, display propertys of X window.
+
+System User
+	w
+	who
+	finger
+		Shows a list of who is loged in, sessions and for how long
+
+	whoami
+		Outputs the current user
+			whoami
+
+	last
+		Shows latest logged in sessions
+			last
+
+		Shows latest logged in sessions for user
+			last Usr1
+
+Shell script
+	Argument $*, $1, $2
+		Instead of passing the arguments one by one, pass them all
+			script.sh $*
+
+	PID for current shell
+		$$
+
+	Start a script asynchronous with &
+		script.sh &
+
+	Run a script in current shell, without forking a new one (great for reading config files)
+		source script
+
+Network
+	nmon
+		Performance Monitor disk, CPU, memory, network
+
+	iftop
+		iftop - display bandwidth usage on an interface by host
+
+
+	ssh
+		Connect to a ssh server
+			ssh user@host
+
+		Connect to ssh using a different port
+			ssh user@host -p 9022
+
+		Opens a local SOCKS proxy port where the traffic is forwarded through the SSH server
+			ssh user@host -D 8080
+
+		Local Port Forwarding
+			Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side
+			ssh -L sourcePort:forwardToHost:onPort user@host
+			Connect to RDP service on ssh-servers local net
+				ssh -L 8000:local-rdp-host:3389 user@host
+				rdp 127.0.0.1:8000
+
+		Remote Port Forwarding
+			Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side
+			ssh -R sourcePort:forwardToHost:onPort user@host
+			Port forward HTTP server to your computer via SSH server
+				ssh -R 8080:localhost:80 user@host
+
+	rsync
+		Sync directory from target to local host
+			rsync -avz -e ssh username@192.168.0.1:/home/username/dir /home/username/dir
+		Sync directory from local host to on target
+			rsync -avz /home/username/dir username@192.168.0.1:/home/username/dir
+
+	telnet
+		Connect to a telnet server
+			telnet host
+
+	netcat
+		Connect to a host TCP socket and output the result to STDOUT
+			nc host port
+		Opens a socket for incomming and serve STDIN
+			cat a.txt|nc -l 1234
+			nc localhost 1234 > b.txt
+
+	netstat
+		Shows current listening sockets
+			netstat -a
+
+		Shows current listening sockets with PID
+			netstat -anp | grep LISTEN | more
+
+	tcpdump
+		Dump traffic on a network
+
+	host
+		SHow IP for entry in /etc/hosts
+
+	hostname
+		Visar hostname for server
+
+	hostname namn
+		Set hostname
+
+	ngrep
+		grep in network traffic localhost
+			sudo ngrep -d lo
+		grep in network traffic localhost, on port 5000
+			sudo ngrep -d lo 5000
+
+	nmap
+		List Scan
+			nmap -sL 172.16.0.0/24
+
+		Port scan
+			nmap -p22 172.16.0.0/24
+
+		Ping scan
+			nmap -sn 172.16.42.0/24
+
+	ifconfig
+		Show all ethernet interfaces
+			ifconfig -a
+
+	ip
+		Show all eternet interfaces
+			ip addr
+		Bring interface up/down
+			sudo ip link set dev eth0 up
+			sudo ip link set dev eth0 down
+		Add IP on interface
+			sudo ip address add 192.168.0.1/24 broadcast 192.168.0.255 dev eth0
+		Remove IP on interface
+			sudo ip address del 192.168.0.1/24 scope global dev eth0
+
+	iptables
+		Drop incomming connections from destination address
+			iptables -A INPUT -s 65.55.44.100 -j DROP
+		Drop incomming connections from destination address and port
+			iptables -A INPUT -s 65.55.44.100 -p tcp --destination-port 25 -j DROP
+
+System Environment
+	Rehash
+		reload config file
+			rehash
+
+	alias
+		Set alias for command
+			alias ls='echo Hello'
+		alternative
+			alias ls 'echo Hello'
+
+	type
+		SHows what kind a of command is, ex: alias, function, binary, buildt in
+
+	jobs
+		Lists current jobs in background
+		Almost all processes can be suspended by pressing Ctrl+Z
+	fg
+		fg %1
+	bg
+		bg %1
+
+	alert
+		Skicka bell-signal till terminalen
+
+	Sleep for 1 second then send bell to terminal
+		sleep 1;printf '\a'
+
+	csh
+		Run script, parse the commads
+			csh -x script
+
+		Run script, show the commands
+			csh -v script
+
+	bash
+		Activate vi mode i bash
+			set -o vi
+			'v' opens the existing command in the editor
+
+	showkey
+		Show keyabord key codes, hit test
+			showkey -a
+
+	crontab
+		List cron-job for current user
+			crontab -l
+
+		Edit cron-job for current user
+			crontab -e
+
+Track errors and Debug
+	strace
+		Trace the file system calls for a binary
+			strace -o trace.txt mkdir mynewdir
+
+		Trace the file open calls for a binary
+			strace -e open bash
+
+	time
+		Measure the run time and CPU time used by a process
+
+	proc stack
+		Check the callstack for a grep'd process
+			sudo cat /proc/$(pgrep -f less)/stack
+
+	tee
+		Read stdin, and write to file, AND at the same time output it to stdout
+			less file.txt|tee copyOfStdIn.txt
+
+	lsusb
+		Lista usb-devises
+
+	ls -ltr /dev
+		List last connected devices
+
+	dmesg
+		dmesg
+			print kernel mesages
+		dmesg -w
+			Continuesly listen for kernel mesages
+
+	systemctl
+		Show services and system
+			sudo systemctl
+		Stop service
+			sudo systemctl stop systemd-resolved.service
+		Disable service
+			sudo systemctl disable systemd-resolved.service
+
+	udevadm
+		Continuesly listen to kernel uevents and events
+			udevadm monitor
+
+	journalctl
+		Query the systemd journal
+			sudo journalctl
+		Show messages for the specified systemd unit UNIT (such as a service unit)
+			journalctl -u dnsmasq.service
+		Continuesly tail journal
+			sudo journalctl -f
+
+i3
+	dmenu
+		Print message in dmenu
+			echo hej|dmenu
+		What was written in dmenu will på outputed to stdout
+		Show pretty colors and original autocomplete
+			dmenu_run -p drad$ -nb '#000000' -nf '#FFFFFF' -sb '#848484' -sf '#000000'
+		Show pretty colors and own command-list
+			cat commands.txt|dmenu -p drad$ -nb '#000000' -nf '#FFFFFF' -sb '#848484' -sf '#000000'|cat
+		Show dmenu in bottom of screen
+			echo menu|dmenu -b|cat
+
+Background image
+	nitrogen
+		nitrogen --restore
+			restores previously set background image and run
+	feh
+		feh --bg-fill ~/Pictures/background.jpg
+			set background image to specific file
+
+Textbased browsers
+	w3m (vim-like)
+	lynx
+
+Ubuntu
+	onboard				Onscreen keyboard
+	udisks-glue			Auto mounter
+
+Server maintinence
+	Ajenti		http-admin
+	SAMBA
+		SAMBA	SAMBA share disk
+		SWAT	Webinterface for samba
+
+CAD/CAM
+	kicad				Schematic-editor
+	FreeCad
+	OpenSCAD
+	LinuxCNC
+	HeeksCNC (CAM)
+
+Graphics/Design/Media
+	InkScape
+	Gimp
+	Blender
+	kdenlive
+
+Office
+	libre office
+	okular PDF-viewer
+	Octave
+
+Font
+	fclist
+		fclist
+			List all fonts available
+		fc-list :scalable=true:spacing=mono: family
+			List all fonts that is monospace
+
+Screen blanking
+	xset					Disable X BlankTime (http://www.shallowsky.com/linux/x-screen-blanking.html)
+								xset s off
+
+Xorg
+	DISPLAY
+		echo $DISPLAY
+			print out current display
+		DISPLAY=:1 xterm
+			set variable to display :1 (main x screen) and start xterm there
+		DISPLAY=:1.1 xterm
+			set variable to display :1.1 (secondary x screen) and start xterm there
+		DISPLAY=:1.1 i3
+			set variable to display :1.1 (secondary x screen) and start i3 window manager there
+
+xrandr
+	ARandR: Another XRandR GUI monitor screen
+
+Double Commander
+	file manager with two panels side by side. Inspired by Total Commander.
+
+Raspbian change windows manager to i3
+	Install i3
+		sudo apt-get install i3
+	Add i3 as a session-manager
+		sudo update-alternatives --install "/usr/bin/x-session-manager" "x-session-manager" "/usr/bin/i3" 1
+	Choos i3 as session-manager
+		sudo update-alternatives --config x-session-manager
+
+	sudo update-alternatives --config x-window-manager
+
+Python
+	Start a webserver in current directory
+		python3 -m http.server
+
+	Python interactive
+		python3 -i
+		ipython3
+
