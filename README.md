@@ -1,8 +1,25 @@
 # dotfiles
 My configuration files for bash, git, i3, tmux, vim, weechat.
 
-## Install
+## Vanilla
+A more plain installation of tools and config.
+### Install
 ```bash
-make vanilla cozy
+make vanilla
+```
+### Uninstall
+```bash
+make unstow_vanilla
+```
+
+## Cozy
+A cozier version of vanilla including vim plugins etc.
+### Install
+```bash
+make cozy
+```
+### Uninstall
+```bash
+make unstow_cozy
 ```
 

@@ -35,11 +35,6 @@ vanilla: check_stow_dependencies
 	bash dependency_checkinstall.sh $(packages_development)
 	bash dependency_checkinstall.sh $(packages_vim)
 	$(info )
-	$(info vim add plugins)
-	vam install youcompleteme
-	vam install ctrlp
-	git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree 2>/dev/null || echo "Repo nerdtree already exist"
-	$(info )
 	$(info Stow vanilla)
 	stow --target $(HOME) bash
 	stow --target $(HOME) fonts
@@ -60,9 +55,15 @@ unstow_vanilla:
 	stow --delete --target $(HOME) tmux
 	stow --delete --target $(HOME) tools
 
-cozy: check_stow_dependencies
+cozy: check_stow_dependencies vanilla
 	$(info )
 	bash dependency_checkinstall.sh $(packages_cozy)
+	$(info )
+	$(info vim add cozy plugins)
+	vam install youcompleteme
+	vam install ctrlp
+	git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree 2>/dev/null || echo "Repo nerdtree already exist"
+	$(info )
 	$(info Stow cozy)
 	stow --target $(HOME) vimcozy
 	stow --target $(HOME) i3
@@ -70,6 +71,9 @@ cozy: check_stow_dependencies
 	stow --target $(HOME) weechat
 
 unstow_cozy:
+	vam remove youcompleteme
+	vam remove ctrlp
+	rm -rf ~/.vim/pack/vendor/start/nerdtree 2>/dev/null || echo "No need to remove repo nerdtree"
 	stow --delete --target $(HOME) vimcozy
 	stow --delete --target $(HOME) i3
 	stow --delete --target $(HOME) pycharm
