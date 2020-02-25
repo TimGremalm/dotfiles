@@ -121,9 +121,9 @@ nmap <F6> :exe MoveTabPageRight()<CR>
 "c-w< - Resize current window shrink width
 "c-w> - Resize current window grow width
 
-" Autocomplete with wildmenu ==================================================
-"set wildmenu							" Enables wildmode a.k.a. autocomplete
-"set wildmode=longest:full,full			" Show full autocomple
+" Autocomplete filenames with wildmenu ========================================
+set wildmenu							" Enables wildmode for filenames
+set wildmode=longest:full,full			" Show full autocomple
 "<Tab> - Autocompletes to the longest common string and invokes the wildmenu
 "<S-Tab> - Autocomplete backwards
 
