@@ -154,7 +154,7 @@ colorscheme elflord							" Set color-scheme
 " You can set relative lin number mode by typing:set rnu
 
 try
-	source ~/.vim/vimcozyrc
+	source ~/.vim/cozy.vim
 catch
 	" No cozy config file installed, ignore.
 endtry

@@ -64,11 +64,13 @@ cozy: check_stow_dependencies
 	$(info )
 	bash dependency_checkinstall.sh $(packages_cozy)
 	$(info Stow cozy)
+	stow --target $(HOME) vimcozy
 	stow --target $(HOME) i3
 	stow --target $(HOME) pycharm
 	stow --target $(HOME) weechat
 
 unstow_cozy:
+	stow --delete --target $(HOME) vimcozy
 	stow --delete --target $(HOME) i3
 	stow --delete --target $(HOME) pycharm
 	stow --delete --target $(HOME) weechat
