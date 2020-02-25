@@ -1,268 +1,177 @@
-"Functions for moving tabs
-function! MoveTabPageLeft()
-    let l:x = tabpagenr()
-    if l:x == 0
-    else
-        let l:x = l:x - 2
-        exe 'tabmove ' . l:x
-    endif
-endfunction
+" Vim Settings ================================================================
+set nocompatible				" Turn off vi compatibility mode
+set nobackup					" Turn off backupfiles
+set nowritebackup				" Turn off backupfiles
+set noswapfile					" Don't use swap file
+set laststatus=2				" Always show statusbar
+":set - for setting options. Append word 'no' for a reverse effect.
+":let - for asigning variables a value.
 
-function! MoveTabPageRight()
-    let l:x = tabpagenr()
-    if l:x == 0
-    else
-        exe 'tabmove ' . l:x
-    endif
-endfunction
+" Scrolling ===================================================================
+set nu							" Show line-numbering
+set scrolloff=5					" Keep at least 5 lines above/below carret
+nmap <F4> :set rnu! rnu?<CR>|	" Set relative line-numbering
+nmap <F10> <c-y>|				" Scroll up
+nmap <F9> <c-e>|				" Scroll down
+"nmap <ScrollWheelUp> <c-y>|	" Enable scroll up with mouse
+"nmap <ScrollWheelDown> <c-e>|	" Enable scroll down with mouse
+"gg - Navigate to BOF
+"1g - Navigate to BOF
+"G - Navigate to EOF
 
-"Use UTF-8 without BOM
-set encoding=utf-8 nobomb
+" Formatting and Indentation ==================================================
+filetype on						" Detect filetype, used by setf.
+filetype indent off				" Use indenting based on filetype.
+set encoding=utf-8 nobomb		" Use UTF-8 without BOM.
+set autoindent					" Follow indentation.
+set noexpandtab					" Use tab character for indentation.
+set tabstop=4					" Set length of a tab.
+set shiftwidth=4				" Set indentation tab width.
+set softtabstop=4				" When using spaces as indent backspace will
+								" remove 4 spaces.
+vnoremap < <gv|					" Reselect visual block after indent
+vnoremap > >gv|					" Reselect visual block after indent
+":retab - Convert all tabs to set indentation-parameters.
+":set expandtab - Use space character for indentation.
+":set enc=utf-8 - Set encoding for UTF-8.
+":set enc=iso-8859-1 - Set encoding for ISO-8859-1.
+":set ff=dos - Set new line mode to \r\n.
+":set ff=unix - Set new line mode to \n.
+":set paste - Paste-mode, insert text whithout autoindentation.
 
-"Turn off backupfiles and lockfiles
-set nobackup
-set noswapfile
-set nowritebackup
+" Searching ===================================================================
+set ignorecase					" Ignore case while searching
+set hlsearch					" Highlight search-results
+set wrapscan					" Search from beginning if hits EOF
+"% - Jump to a matching opening or closing parenthesis
+"* - Search, forward, for word under carret forward
+"# - Search, backward, for word under carret forward
+"fw - Find next character "w"
+"cfo - subsitute from carret until next occurance of cahracter "o"
+":%s/foo/bar/g - Substitute foo for bar globally
 
-"Show line-numbering
-:set nu
+" Select ======================================================================
+set showcmd						" Show select count of rows/cloumns in visual
+"c-v<Down>Ihej - Visual block select 1 row down, insert text "hej" before
+"V<Down>y - Select by Row, 1 row down and copy it
+"set mouse=a					" Enable mouse select
 
-"Show matching bracket if cursor is on
-:set showmatch
+" Highlighting ================================================================
+match Error /\s\+$/						" Highlight trailing spaces
+										" Turn off :match Error none
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+										" Show whitespace with above characters
+nmap <F2> :set list! list?<CR>|			" Toggle highlight of whitespace
+nmap <F3> :set hlsearch! hlsearch?<CR>|	" Toggle search highlight
+nmap <c-f> :let @/=""<CR>|				" Clear search result and highlighting
 
-"Ignore case while searching
-:set ignorecase
+" Syntax highlighting =========================================================
+set showmatch					" Visually show matching brackets under carret
+syntax enable					" Set syntax highlighting
+":setf c - Manually set syntax to C
+":setf php - Manually set syntax to PHP
+":setf xml - Manually set syntax to XML
 
-"Highlight search-results
-:set hlsearch
-
-"Search from beginning of file if find hits EOF
-:set wrapscan
-
-"Keep at least 5 lines above/below
-:set scrolloff=5
-
-"Follow indentation
-:set autoindent
-
-filetype indent on
-
-"Set length of a tab
-:set tabstop=4
-
-":set softtabstop=4
-
-"Set indentation tab width
-:set shiftwidth=4
-
-"Don't convert tabs into spaces
-:set noexpandtab
-
-"Import clipboard from PC/Terminal (Not available through remote-terminal)
-:set clipboard=unnamed
-
-"Set color-scheme
-:colorscheme elflord
-
-"Set syntax highlighting
-:syntax enable
-
-"Show statusbar
-:set laststatus=2
-
-"Highlight trailing spaces
-:match Error /\s\+$/
-"  Turn off :match Error none
-
-"Toggle search highlight
-:nmap <F3> :set hlsearch! hlsearch?<CR>
-
-"Clear search result and highlighting
-:nmap <c-f> :let @/=""<CR>
-
-"Select next/previous tab
-:nmap <F7> :tabp<CR>
-:nmap <F8> :tabn<CR>
-
-"Move tab left/right
-:nmap <F5> :exe MoveTabPageLeft()<CR>
-:nmap <F6> :exe MoveTabPageRight()<CR>
-
-"Create new tab with open prompt for filename, leave empty for a new file
-:nmap <c-t> :tabe
-
-"Quit current tab/split
-":nmap <c-w> :q<CR>
-
-"Select pane down/up/left/right
-:nmap <c-j> :wincmd j<CR>
-:nmap <c-k> :wincmd k<CR>
-:nmap <c-h> :wincmd h<CR>
-:nmap <c-l> :wincmd l<CR>
-
-"Split pane with open prompt for filename, leave empty for a new file
-":map <c-s> :split
-":map <c-d> :vsplit
-":nmap " :split
-":nmap % :vsplit
-
-"Reselect visual block after indent/outdent
-vnoremap < <gv
-vnoremap > >gv
-
-"Scroll up/down with Shift+Up/Down
-:nmap <F10> <c-y>
-:nmap <F9> <c-e>
-
-"Set relative line-numbering
-:nmap <F4> :set rnu! rnu?<CR>
-
-"Show whitespace
-:nmap <F2> :set list! list?<CR>
-
-"Show whitespace with these characters
-:set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-
-"Enable mouse select
-":set mouse=a
-
-"Enable scroll with mouse
-":nmap <ScrollWheelUp> <c-y>
-":nmap <ScrollWheelDown> <c-e>
-
-"Set UTF-8
-":set enc=utf-8
-":set enc=iso-8859-1
-
-"Set newline mode
-":set ff=dos
-":set ff=unix
-
-"Set syntax language
-":setf c
-":setf php
-":setf xml
-
-"Set length of a tab
-":set tabstop=4
-
-"Set indentation tab width
-":set shiftwidth=4
-
-"Convert tabs into spaces
-":set expandtab
-
-"Convert all tabs to set indentation-parameters
-":retab
-
-"Import file after cursor
-":r filename
-
-"Write vim-opened file to file
-":w Newfilename
-
-"Write row 18 to EOF to file
-":18, w! filerow
-
-"Write row 18 to 22 to file
-":18,22 w! filerow
-
-"Paste-mode (paste from clipboard whithout autoindentation)
-":set paste
-
-"Insert at multiple lines
-"Ctrl+V I insert text Esc
-
-"Substitute foo for bar globally (replace)
-":%s/foo/bar/g
-
-"Record a macro
+" Macro =======================================================================
+nmap <c-m> qq|							" Start record macro to 'q'
+nmap <c-q> @q|							" Playback macro 'q' once
 "qa - Start recording macro to register a
 "C-a - Increment number
 "q - Stop recording
 "9@a - Playback macro from register a 9 times
 
-"Navigate back in history
-"C-o
+" Tab, Buffer and Window Navigation ===========================================
+nmap <c-t> :tabe|						" Create new tab, but leave promt open
+										" Write filename, leave blank for new
+nmap <F7> :tabp<CR>|					" Navigate to previous tab <gT>
+nmap <F8> :tabn<CR>|					" Navigate to next tab <gt>
+function! MoveTabPageLeft()
+	let l:x = tabpagenr()
+	if l:x == 0
+	else
+		let l:x = l:x - 2
+		exe 'tabmove ' . l:x
+	endif
+endfunction
+function! MoveTabPageRight()
+	let l:x = tabpagenr()
+	if l:x == 0
+	else
+		exe 'tabmove ' . l:x
+	endif
+endfunction
+nmap <F5> :exe MoveTabPageLeft()<CR>
+nmap <F6> :exe MoveTabPageRight()<CR>
+"C-o - navigate backwards in history works across different buffers and tabs)
+"C-i - navigate forwards in history works across different buffers and tabs)
+"gf - Go to File (under carret)
+"c-wq - Close current window
+":qa - Close all windows
+"c-ww - Switch focus to next window
+"c-wr - Switch focus to previous window
+"c-w<Up> - Switch focus to window up
+"c-w<Down> - Switch focus to window down
+"c-w<Left> - Switch focus to window left
+"c-w<Right> - Switch focus to window right
+"c-wR - Rotate windows layout
+"c-wJ - Move current window to bottom
+"c-wK - Move current window to top
+"c-w- - Resize current window shrink width
+"c-w+ - Resize current window grow width
+"c-w< - Resize current window shrink width
+"c-w> - Resize current window grow width
 
-"Navigate forward in history
-"C-i
+" Autocomplete with wildmenu ==================================================
+"set wildmenu							" Enables wildmode a.k.a. autocomplete
+"set wildmode=longest:full,full			" Show full autocomple
+"<Tab> - Autocompletes to the longest common string and invokes the wildmenu
+"<S-Tab> - Autocomplete backwards
 
-"Navigate to BOF
-"gg
-"1g
+" Color Theme =================================================================
+colorscheme elflord							" Set color-scheme
 
-"Navigate to EOF
-"G
+" Airline Plugin ==============================================================
+" a colored statusline for vim that clearly shows current mode and stats
+let g:airline_theme='badwolf'				" Set color theme
+let g:airline_powerline_fonts=1				" Enable powerline arrows
+let g:airline#extensions#tabline#enabled=1	" Enable top tab buffer bar
 
-"Close all windows
-":qa
-
-"Switch focus to other window
-"C-ww
-
-"Switch focus to window
-"C-w<Up>
-"C-w<Down>
-"C-w<Left>
-"C-w<Right>
-
-"Switch focus to last window
-"C-wr
-
-"Rotate windows
-"C-wR
-
-"Move the current window to be at the very bottom/top
-"C-wJ
-"C-wK
-
-"Resize height of window
-"C-w+
-"C-w-
-
-"Resize width of window
-"C-w<
-"C-w>
-
-"Find cahracter
-"Hello world
-"fw -find character w
-
-"Find character while replacing
-"Hello world
-"cfo - change everything up to character o
-
-"Work with vim grammer
-"y2w - yank two words
-"y3} - yank three paragrafes
-"dap - delete a paragraf
-
-"Start vim from the terminal
-"vim - -p[N] Open N tab pages. When N is omitted, open one tab page for each file.
-"vim -pN file1 file2 file3
-"vim -d file1 file2 - Compare files in diff mode
-
-" Plugins:
-
-" Airline
-let g:airline_theme='badwolf'
-" Enable powerline arrows
-let g:airline_powerline_fonts=1
-" Enable airline on top tab buffer bar
-let g:airline#extensions#tabline#enabled=1
-" Show select cound of rows/cloumns in visual mode
-set showcmd
-
-"NERDTree - a file system explorer
+" NERDTree Plugin =============================================================
+" a file system explorer inside Vim
+"			t - Open entry in a new tab
+"			s - Open entry in a new split
 map <C-n> :NERDTreeToggle<CR>
-"t opens file in a new tab
 
-"ctrlp - Full path fuzzy file, buffer, mru, tag, ... finder for Vim
-"c-p Find-mode
-"<c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+" CtrlP Plugin ================================================================
+" Full fuzzy file/buffer/MRU finder
+"			c-t - Open entry in a new tab
+"			c-v - Open entry in vertical split
+"			c-x - Open entry in horizontal split
+":CtrlP - Shows searchable files (Find-mode usually accessed via Ctrl+P)
+":CtrlPBuffer - Shows open buffers
+":CtrlPMixed - Shows both open buffers and open files
+":CtrlPMRUFiles - Shows Most Recently Used files
 
-"VimCompletesMe
-"Faster then YCM
-"Tab, S-Tab to autocomplete
+" File handling ===============================================================
+"vim -pN file1 file2 file3 - Open tab pages for each file
+"vim -d file1 file2 - Compare files in diff mode
+":r filename - Import file after carret
+":w Newfilename - Write content in current window to file
+":18, w! filerow.txt - Write row 18 to  EOF to file
+":18,22 w! filerow.txt - Write row 18 to 22 to file
+"ZZ - Save file and quit
+
+" General tips of how to use vim ==============================================
+" Work with vim commands just like grammer in verbal languages
+"y2w - Yank two Words
+"y3} - Yank three Paragrafes
+"y3{ - Yank three Paragrafes up
+"dap - Delete A Paragraf
+"daw - Delete A Word
+"v2e - Visually select 2 End of words
+"dG  - Delete everything from carret to EOF
+
+" Use relative line numbers
+" Work with relative line numbers, it makes deleting an copying easier.
+" You can set relative lin number mode by typing:set rnu
 
