@@ -13,8 +13,8 @@ set scrolloff=5					" Keep at least 5 lines above/below carret
 nmap <F4> :set rnu! rnu?<CR>|	" Set relative line-numbering
 nmap <F10> <c-y>|				" Scroll up
 nmap <F9> <c-e>|				" Scroll down
-"nmap <ScrollWheelUp> <c-y>|	" Enable scroll up with mouse
-"nmap <ScrollWheelDown> <c-e>|	" Enable scroll down with mouse
+"nmap <ScrollWheelUp> <c-y>|	" Enable scroll up 1 line with mouse
+"nmap <ScrollWheelDown> <c-e>|	" Enable scroll down 1 line with mouse
 "gg - Navigate to BOF
 "1g - Navigate to BOF
 "G - Navigate to EOF
@@ -41,6 +41,7 @@ vnoremap > >gv|					" Reselect visual block after indent
 
 " Searching ===================================================================
 set ignorecase					" Ignore case while searching
+set smartcase					" Case sensitive search if any caps
 set hlsearch					" Highlight search-results
 set wrapscan					" Search from beginning if hits EOF
 "% - Jump to a matching opening or closing parenthesis
@@ -52,9 +53,9 @@ set wrapscan					" Search from beginning if hits EOF
 
 " Select ======================================================================
 set showcmd						" Show select count of rows/cloumns in visual
+set mouse=a						" Enable mouse select
 "c-v<Down>Ihej - Visual block select 1 row down, insert text "hej" before
 "V<Down>y - Select by Row, 1 row down and copy it
-"set mouse=a					" Enable mouse select
 
 " Highlighting ================================================================
 match Error /\s\+$/						" Highlight trailing spaces
@@ -133,8 +134,8 @@ colorscheme elflord							" Set color-scheme
 " File handling ===============================================================
 "vim -pN file1 file2 file3 - Open tab pages for each file
 "vim -d file1 file2 - Compare files in diff mode
-":r filename - Import file after carret
-":w Newfilename - Write content in current window to file
+":r filename.txt - Import file after carret
+":w NewFilename.txt - Write content in current window to file
 ":18, w! filerow.txt - Write row 18 to  EOF to file
 ":18,22 w! filerow.txt - Write row 18 to 22 to file
 "ZZ - Save file and quit
