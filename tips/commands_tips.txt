@@ -502,6 +502,10 @@ Network
 		Shows current listening sockets with PID
 			netstat -anp | grep LISTEN | more
 
+		Shows listening sockets and what ptocess
+			#netstat -plntu
+			netstat -pluton
+
 	tcpdump
 		Dump traffic on a network
 
