@@ -721,15 +721,20 @@ Screen blanking
 								xset s off
 
 Xorg
-	DISPLAY
+	Print out current display
 		echo $DISPLAY
-			print out current display
+	Set variable to display :1 (main x screen) and start xterm there
 		DISPLAY=:1 xterm
-			set variable to display :1 (main x screen) and start xterm there
+	Set variable to display :1.1 (secondary x screen) and start xterm there
 		DISPLAY=:1.1 xterm
-			set variable to display :1.1 (secondary x screen) and start xterm there
+	Set variable to display :1.1 (secondary x screen) and start i3 window manager there
 		DISPLAY=:1.1 i3
-			set variable to display :1.1 (secondary x screen) and start i3 window manager there
+
+	Show windows on another X display server on network
+		export DISPLAY=192.168.0.10:0
+
+	Run an X display server on WIndows
+		https://mobaxterm.mobatek.net/download.html
 
 xrandr
 	ARandR: Another XRandR GUI monitor screen
