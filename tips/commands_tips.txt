@@ -756,7 +756,86 @@ Python
 	Start a webserver in current directory
 		python3 -m http.server
 
+	Insert puton interactive inside scope
+		import IPython
+		IPython.embed()
+
 	Python interactive
 		python3 -i
 		ipython3
+
+ipython3
+	Store
+		store var
+			Stores variable var for later recall
+		store -r
+			Restores store
+		store var >a.txt
+			Stores variable to file
+	Edits in external $EDITOR
+		edit var
+		edit function
+	Logging in ipython file format
+		logstart
+		logstop
+		logstate
+	List scope
+		dir()
+	List local variables
+		who
+	List local variables with type and value
+		whos
+	Get ipython
+		ip = get_ipython()
+	Define macro q that runs myfunc()
+		ip.define_macro('q', 'myfunc()')
+	Define alias that executes ls
+		%alias l ls -la
+	ipythons magic functions
+		magic
+			help about magic functions
+		lsmagic
+			list all magic functions
+	page obj
+		Pretty print the object through a pager
+	?obj
+		Shows docstring for obj or function
+	History
+		history
+			shows history
+		history -n
+			show history with numbering
+		recall 3
+			recalls 3'rd history entry
+		recall searchterm
+			recalls with searchterm
+		rerun
+			runprevious entry
+	Set floating point precision for pretty printing
+		%precision 3
+			shows 3 decimals
+		%precision %e
+			shows exponent
+	File bash navigation
+		ls -l
+			list files
+		pwd
+			show current directory
+		!ping example.org
+			runs external bash command
+		!ping example.org > /tmp/pinged
+			pipes workes as well
+		contents = !ls
+			run shell command and store stdout in variable
+	Time execution of a Python statement or expression
+		%timeit function_to_test
+	Debug
+		xmode Verbose|Context|Plain
+			Different levels on stacktrace
+		debug
+			Enter debugmode after exception
+				ipdb> print(var)
+					print variable
+				ipdb> a
+					show arguments
 
