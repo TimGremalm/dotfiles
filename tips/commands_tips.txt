@@ -765,6 +765,9 @@ Python
 		ipython3
 
 ipython3
+	Profile
+		ipython profile create
+			creates a profile ~/.ipython/profile_default/ipython_config.py
 	Store
 		store var
 			Stores variable var for later recall
@@ -796,6 +799,8 @@ ipython3
 			help about magic functions
 		lsmagic
 			list all magic functions
+		get_ipython().magic('pwd')
+			get ipython instance and execute magic command pwd
 	page obj
 		Pretty print the object through a pager
 	?obj
