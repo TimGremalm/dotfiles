@@ -778,6 +778,11 @@ ipython3
 	Edits in external $EDITOR
 		edit var
 		edit function
+		edit re.match
+		edit file.txt
+		edit variables.py
+	run variables.py
+		execute file inside scope
 	Logging in ipython file format
 		logstart
 		logstop
@@ -793,7 +798,12 @@ ipython3
 	Define macro q that runs myfunc()
 		ip.define_macro('q', 'myfunc()')
 	Define alias that executes ls
-		%alias l ls -la
+		alias l ls -la
+		alias ll ls -la %s
+		alias
+			list aliases
+		unalias
+			removes alias
 	ipythons magic functions
 		magic
 			help about magic functions
@@ -804,7 +814,11 @@ ipython3
 	page obj
 		Pretty print the object through a pager
 	?obj
+	obj?
+	pdoc obj
 		Shows docstring for obj or function
+	pfile obj
+		Page through complete doc file
 	History
 		history
 			shows history
@@ -814,8 +828,12 @@ ipython3
 			recalls 3'rd history entry
 		recall searchterm
 			recalls with searchterm
-		rerun
-			runprevious entry
+		_i23
+			browse to history entry 23
+		In[3]
+			In is a list of history
+		exec In[4:6]
+			execute history entry 4 to 6
 	Set floating point precision for pretty printing
 		%precision 3
 			shows 3 decimals
@@ -826,12 +844,29 @@ ipython3
 			list files
 		pwd
 			show current directory
+		dhist
+			show directory history
+		cd -7
+			chnage directory to t'th entry in dhist
 		!ping example.org
 			runs external bash command
 		!ping example.org > /tmp/pinged
 			pipes workes as well
-		contents = !ls
+		!ls -l $python_var
+			use python variable inside shell
+		!echo ${42+63}
+			evaluate python inside shell
+		def a(arg):
+			 !echo $arg
+			 # runs shell command inside python function
+		files = !ls
 			run shell command and store stdout in variable
+	Bookmark
+		bookmark dotfiles
+			bookmark current directory with name dotfiles
+		cd dotfiles
+		bookmark -l
+		bookmark -r dotfiles
 	Time execution of a Python statement or expression
 		%timeit function_to_test
 	Debug
