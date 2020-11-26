@@ -781,8 +781,24 @@ ipython3
 		edit re.match
 		edit file.txt
 		edit variables.py
+		edit 15-18
+			edit history lines 15-18
+		edit 1-3 6
+			edit history lines 1-3 and 6
+		save file 2-5
+			save history entrys
+		cpaste
+			paste dirty test input, close with --
 	run variables.py
 		execute file inside scope
+	prun variable.py
+		execute file with python profiler
+	run -p file
+		run file outside scope
+	bg file
+		run file in the background
+	jobs[0].result
+		show result ob background job
 	Logging in ipython file format
 		logstart
 		logstop
@@ -819,6 +835,8 @@ ipython3
 		Shows docstring for obj or function
 	pfile obj
 		Page through complete doc file
+	psource func
+		prints source of function
 	History
 		history
 			shows history
@@ -868,7 +886,10 @@ ipython3
 		bookmark -l
 		bookmark -r dotfiles
 	Time execution of a Python statement or expression
-		%timeit function_to_test
+		time function_to_test
+			run once and time it
+		timeit function_to_test
+			run multiple times to calculate avrage
 	Debug
 		xmode Verbose|Context|Plain
 			Different levels on stacktrace
