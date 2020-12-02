@@ -38,6 +38,8 @@ Branches
 		Merge from branch into current branch (keep the branch-history)
 	git cherry-pick [commit]
 		Integrate changes in the given commit into the current branch.
+	git cherry-pick -n [commit]
+		Cherry pick without commit.
 	git reset --hard origin/master
 		Forcefully reset to origin
 
