@@ -791,10 +791,12 @@ ipython3
 			paste dirty test input, close with --
 	run variables.py
 		execute file inside scope
-	prun variable.py
-		execute file with python profiler
 	run -p file
 		run file outside scope
+	autoreload
+		always reload a module before executing a function
+	prun variable.py
+		execute file with python profiler
 	bg file
 		run file in the background
 	jobs[0].result
@@ -827,6 +829,12 @@ ipython3
 			list all magic functions
 		get_ipython().magic('pwd')
 			get ipython instance and execute magic command pwd
+		Write python magic function
+			@register_line_magic("lm")
+			def lmagic(line):
+				"my line magic"
+				return line
+
 	page obj
 		Pretty print the object through a pager
 	?obj
