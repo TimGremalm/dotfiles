@@ -406,6 +406,26 @@ System administration
 		Append serial group to user
 			usermod -a -G dialout username
 
+Container administration
+	ctop
+		* Shows processes and their CPU usage for containers
+
+	docker-compose
+		docker-compose up
+			Compose and start container
+		docker-compose up -d
+			Start is as a daemon
+		docker-compose stop
+			Stop container
+		docker-compose rm
+			Remove container
+
+	Open terminalk inside container
+		With docker-compose we have to specify stdin_open and tty to true to enter interactive mode
+
+		docker attach <container id> (#detach with Ctrl+P Ctrl+Q)
+		run command within a container docker exec -it <container id> /bin/bash
+
 Window and events
 	xev
 		Test X events
