@@ -34,21 +34,24 @@ __prompt_command() {
 	PS1=""
 	local BRANCH=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
 	local ResetFormat='\[\e[0m\]'
-	local HostBG='\[\e[48;5;166m\]'
-	local HostFG='\[\e[38;5;166m\]'
-	local HostTX='\[\e[38;5;215m\]'
-	local UserBG='\[\e[48;5;31m\]'
-	local UserFG='\[\e[38;5;31m\]'
-	local UserTX='\[\e[38;5;117m\]'
-	local BranchBG='\[\e[48;5;236m\]'
-	local BranchFG='\[\e[38;5;236m\]'
-	local BranchTX='\[\e[38;5;244m\]'
-	local CurdirBG='\[\e[48;5;240m\]'
-	local CurdirFG='\[\e[38;5;240m\]'
-	local CurdirTX='\[\e[38;5;249m\]'
-	local ExitcodeBG='\[\e[48;5;52m\]'
-	local ExitcodeFG='\[\e[38;5;52m\]'
-	local ExitcodeTX='\[\e[38;5;211m\]'
+	# EsacapeType;5;ColorEndesacpe
+	# Foreground Blue \[\e\[38;5;4m\]
+	# Background Cyan \[\e\[48;5;5m\]
+	if [ -z ${HostBG+x} ]; then local HostBG='\[\e[48;5;166m\]'; fi
+	if [ -z ${HostFG+x} ]; then local HostFG='\[\e[38;5;166m\]'; fi
+	if [ -z ${HostTX+x} ]; then local HostTX='\[\e[38;5;215m\]'; fi
+	if [ -z ${UserBG+x} ]; then local UserBG='\[\e[48;5;31m\]'; fi
+	if [ -z ${UserFG+x} ]; then local UserFG='\[\e[38;5;31m\]'; fi
+	if [ -z ${UserTX+x} ]; then local UserTX='\[\e[38;5;117m\]'; fi
+	if [ -z ${BranchBG+x} ]; then local BranchBG='\[\e[48;5;236m\]'; fi
+	if [ -z ${BranchFG+x} ]; then local BranchFG='\[\e[38;5;236m\]'; fi
+	if [ -z ${BranchTX+x} ]; then local BranchTX='\[\e[38;5;244m\]'; fi
+	if [ -z ${CurdirBG+x} ]; then local CurdirBG='\[\e[48;5;240m\]'; fi
+	if [ -z ${CurdirFG+x} ]; then local CurdirFG='\[\e[38;5;240m\]'; fi
+	if [ -z ${CurdirTX+x} ]; then local CurdirTX='\[\e[38;5;249m\]'; fi
+	if [ -z ${ExitcodeBG+x} ]; then local ExitcodeBG='\[\e[48;5;52m\]'; fi
+	if [ -z ${ExitcodeFG+x} ]; then local ExitcodeFG='\[\e[38;5;52m\]'; fi
+	if [ -z ${ExitcodeTX+x} ]; then local ExitcodeTX='\[\e[38;5;211m\]'; fi
 	# Hostname
 	PS1+="${HostBG}${HostTX}"
 	PS1+=" ⌂ \h "
