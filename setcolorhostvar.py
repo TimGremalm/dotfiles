@@ -6,6 +6,7 @@ import hashlib
 import getpass
 
 profile = expanduser("~/.profile")
+bashrc = expanduser("~/.bashrc")
 hostname = socket.gethostname()
 username = getpass.getuser()
 
@@ -92,4 +93,12 @@ else:
 	termcolor = termColorBasedOnTextHash(username, hostcolors)
 	vardecl = f"\n# writtten by setcolorhostvar.py\nexport UserTX='\[\e[38;5;{termcolor[2]}m\]'"
 	appendToFile(profile, vardecl)
+
+# Include custom bashrc in .bashrc
+if searchStringInFile(bashrc, ".config/bash/bashrc"):
+	print(".config/bash/bashrc exists in ~/.bashrc.")
+else:
+	print(".config/bash/bashrc doesn't exist in ~/.bashrc.")
+	vardecl = f"\n# writtten by setcolorhostvar.py\nif [ -f $HOME/.config/bash/bashrc ]; then\n\t. ~/.config/bash/bashrc\nfi"
+	appendToFile(bashrc, vardecl)
 
