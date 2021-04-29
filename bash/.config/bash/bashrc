@@ -114,11 +114,6 @@ export PATH=$PATH:$HOME/.local/bin
 #Even without accessibility enabled, many Gnome components try to connect to the AT-SPI bus.
 export NO_AT_BRIDGE=1
 
-#Enable powerline
-#if [ -f $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
-#	. $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-#fi
-
 #export DISPLAY=:0
 #export DISPLAY=:1					X screen main
 #export DISPLAY=:1.1				X screen secondary
