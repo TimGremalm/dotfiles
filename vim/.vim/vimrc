@@ -50,6 +50,7 @@ set wrapscan					" Search from beginning if hits EOF
 "fw - Find next character "w"
 "cfo - subsitute from carret until next occurance of cahracter "o"
 ":%s/foo/bar/g - Substitute foo for bar globally
+"vjj:s/search/substitute/g - Select 2 lines down and substitute text within.
 
 " Select ======================================================================
 set showcmd						" Show select count of rows/cloumns in visual
