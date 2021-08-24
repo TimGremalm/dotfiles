@@ -1,5 +1,5 @@
 #!/bin/bash
-main=":0"
+main=":1"
 secondary=":1.1"
 echo 
 echo 

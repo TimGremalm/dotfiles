@@ -122,9 +122,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+E exec i3exit
+#bindsym $mod+Shift+E exec i3exit
 # lock screen
-bindsym $mod+Ctrl+l exec i3lock -c 141414
+#bindsym $mod+Ctrl+l exec i3lock -c 141414
+bindsym $mod+Ctrl+l exec i3lockblack
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -187,15 +188,16 @@ bindsym $mod+Shift+Control+Right move workspace to output right
 #exec --no-startup-id sleep 3 && dropbox start
 
 #Prevent screen blanking
-#exec --no-startup-id xset s off
-#exec --no-startup-id xset -dpms
-#exec --no-startup-id xset s noblank
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
 
 #Turn on numlock
-#exec --no-startup-id numlockx on
+exec --no-startup-id numlockx on
 
 #Set position of monitors
 #exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 3000x0 --rotate normal --output DP-5 --mode 1920x1080 --pos 0x0 --rotate left --output DP-4 --off --output DP-3 --mode 1920x1080 --pos 1080x0 --rotate normal --output DP-2 --off --output DP-1 --off --output DP-0 --mode 1920x1080 --pos 1080x1080 --rotate normal
+exec --no-startup-id xrandr --output DVI-I-0 --off --output DVI-I-1 --primary --mode 1920x1080 --pos 1680x1200 --rotate normal --output HDMI-0 --off --output DP-0 --off --output DP-1 --mode 1920x1200 --pos 1680x0 --rotate normal --output DP-2 --mode 1680x1050 --pos 0x1230 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --mode 1680x1050 --pos 3600x600 --rotate right
 #Map touch screen
 #exec --no-startup-id xinput --map-to-output 9 DP-0
 
@@ -217,8 +219,8 @@ bindsym $mod+Shift+Control+Right move workspace to output right
 exec --no-startup-id ~/.config/i3/workspacespecific.sh >> ~/.config/i3/workspacespecific.log
 
 #Set thin border and no titlebar for webbrowser and terminal
-for_window [title=".* - Mozilla Firefox"] border 1pixel
-for_window [title=".* - Chromium"] border 1pixel
+for_window [title=".* Mozilla Firefox"] border 1pixel
+for_window [title=".* Chromium"] border 1pixel
 for_window [title="Terminal"] border 1pixel
 for_window [title=".*eclipse.*"] border 1pixel
 for_window [title="cool-retro-term"] border 1pixel
