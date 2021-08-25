@@ -1,2 +1,13 @@
 # Ignore Ubuntu font cache files
 .uuid
+
+# Vim config directory
+vim/.vim/autoload
+vim/.vim/doc/vim/.vim/doc/
+vim/.vim/doc/
+vim/.vim/plugin/
+vim/.vim/pack/
+
+# Ignore Gitk config, it changes position all the time
+git/.config/git/gitk
+
