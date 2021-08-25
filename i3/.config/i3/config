@@ -168,9 +168,11 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 #bindsym XF86AudioMute exec amixer -q set Master toggle
 
-# Move workspace to screen left/right
+# Move workspace to screen left/right/up/down
 bindsym $mod+Shift+Control+Left move workspace to output left
 bindsym $mod+Shift+Control+Right move workspace to output right
+bindsym $mod+Shift+Control+Up move workspace to output up
+bindsym $mod+Shift+Control+Down move workspace to output down
 
 #Trayfield stuff
 #===============
