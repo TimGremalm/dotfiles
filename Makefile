@@ -48,6 +48,7 @@ vanilla: check_stow_dependencies
 	stow --target $(HOME) tips
 	stow --target $(HOME) tmux
 	stow --target $(HOME) tools
+	stow --target $(HOME) x
 	python3 setcolorhostvar.py
 
 unstow_vanilla:
@@ -59,6 +60,7 @@ unstow_vanilla:
 	stow --delete --target $(HOME) tips
 	stow --delete --target $(HOME) tmux
 	stow --delete --target $(HOME) tools
+	stow --delete --target $(HOME) x
 
 cozy: check_stow_dependencies vanilla
 	$(info )
