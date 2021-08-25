@@ -224,4 +224,5 @@ for_window [title=".* Chromium"] border pixel 0
 for_window [title="Terminal"] border pixel 1
 for_window [title=".*eclipse.*"] border pixel 1
 for_window [title="cool-retro-term"] border pixel 1
+for_window [class="Spotify"] border pixel 0
 
