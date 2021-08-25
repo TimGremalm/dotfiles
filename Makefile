@@ -4,12 +4,13 @@ default: help
 	$(info )
 	$(info Run a make command)
 
-packages_network = openssh-server nmap net-tools ngrep iftop nmon wget
-packages_file = ncdu sshfs tree mlocate
-packages_tool = tmux htop w3m screen numlockx ncal
+packages_network = openssh-server nmap net-tools ngrep iftop nmon wget fail2ban
+packages_file = ncdu sshfs tree mlocate doublecmd-qt qdirstat
+packages_tool = tmux htop w3m screen numlockx ncal ffmpeg arandr onboard
 packages_development = git gitk meld python3 python3-pip python3-dev ipython3 python3-numpy python3-dbus python3-pytest
 packages_vim = vim vim-addon-manager vim-airline vim-airline-themes vim-youcompleteme vim-ctrlp fonts-powerline
-packages_cozy = i3 feh inkscape doublecmd-qt qdirstat weechat
+packages_cozy = i3 feh
+packages_extras = inkscape weechat chromium-browser gimp okular
 help:
 	$(info )
 	$(info Welcome user, this makefile will install programs and configure dot files.)
@@ -25,6 +26,9 @@ help:
 	$(info )
 	$(info *  cozy - Will install cozy programs and stow related config files:)
 	$(info ,    $(packages_cozy))
+	$(info )
+	$(info *  extras - Will install extras programs and stow related config files:)
+	$(info ,    $(packages_extras))
 	$(info )
 
 vanilla: check_stow_dependencies
@@ -78,6 +82,15 @@ unstow_cozy:
 	stow --delete --target $(HOME) vimcozy
 	stow --delete --target $(HOME) i3
 	stow --delete --target $(HOME) pycharm
+
+extras: check_stow_dependencies vanilla
+	$(info )
+	bash dependency_checkinstall.sh $(packages_extras)
+	$(info )
+	$(info Stow extras)
+	stow --target $(HOME) weechat
+
+unstow_extras:
 	stow --delete --target $(HOME) weechat
 
 check_stow_dependencies:

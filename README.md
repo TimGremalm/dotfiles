@@ -23,3 +23,14 @@ make cozy
 make unstow_cozy
 ```
 
+## Extras
+Extra software like Weechat, Inkscape, Gimp.
+### Install
+```bash
+make extras
+```
+### Uninstall
+```bash
+make unstow_extras
+```
+
