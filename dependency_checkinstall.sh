@@ -5,7 +5,7 @@ do
 	dpkg --status $arg 1>/dev/null 2>&1
 	if [ $? -eq 1 ]; then
 		echo -e "\n$arg is not installed, trying to install it now"
-		sudo apt install $arg
+		sudo apt install -y $arg
 	fi
 done
 
