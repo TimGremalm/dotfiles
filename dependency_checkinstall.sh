@@ -1,4 +1,6 @@
 #!/bin/bash
+# Input arguments packages to install.
+# Will check each package if it's installed, if not try to install it via apt or snap.
 for arg in "$@"
 do
 	# Use dpkg status for checking if package is installed, hide spammy output
