@@ -99,10 +99,19 @@ export PATH=$PATH:$HOME/.local/bin
 #export PATH=$PATH:$HOME/build/sam-ba_3.2.1
 #export PATH=$PATH:$HOME/build/sam-ba_3.2.3
 
-#ESP toolchain
-#export PATH=$PATH:$HOME/build/xtensa-esp32-elf/bin
-#export PATH=$PATH:$HOME/build/esp-idf/tools
+# ESP32 toolchain esp-idf
 #export IDF_PATH=$HOME/build/esp-idf
+##export PATH="${IDF_PATH}/tools:${PATH}"
+##export PATH="${IDF_PATH}/components/esptool_py/esptool:${PATH}"
+##export PATH="${IDF_PATH}/components/espcoredump:${PATH}"
+##export PATH="${IDF_PATH}/components/partition_table:${PATH}"
+##export PATH="${IDF_PATH}/components/app_update:${PATH}"
+## Flash parameters
+#export ESPPORT=/dev/ttyS4
+#export ESPBAUD=115200
+## Source esp-idf environment
+#alias get_idf='. $HOME/build/esp-idf/export.sh'
+#alias erase_flash='$IDF_PATH/components/esptool_py/esptool/esptool.py -p $ESPPORT -b $ESPBAUD erase_flash'
 
 #Programs
 #export PATH=$PATH:$HOME/build/eclipse/cpp-oxygen/eclipse
