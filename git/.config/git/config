@@ -3,7 +3,7 @@
 	email = tim@gremalm.se
 
 [diff]
-	tool = DiffVim
+	tool = DiffMeldmerge
 [difftool]
 	prompt = false
 [difftool "DiffVim"]
@@ -12,7 +12,7 @@
 	cmd = 'meld' \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-	tool = MergeVim
+	tool = MergeMeldmerge
 [mergetool]
 	prompt = false
 	keepBackup = false
@@ -30,4 +30,7 @@
 	editor = vim
 	autocrlf = false
 	excludesfile =  ~/.config/git/gitignore_global.txt
+
+[pull]
+	rebase = false
 
