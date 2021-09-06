@@ -202,6 +202,10 @@ bindsym $mod+Shift+Control+Right move workspace to output right
 bindsym $mod+Shift+Control+Up move workspace to output up
 bindsym $mod+Shift+Control+Down move workspace to output down
 
+# Colors
+# class                 border  bground text    indicator child_border
+client.focused          #4C7899 #225F60 #FFFFFF #2E9EF4   #285577
+
 #Trayfield stuff
 #===============
 #Most of the rows here is just a reminder and have to be conmfigured individually per host
