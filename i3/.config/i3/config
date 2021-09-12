@@ -253,10 +253,10 @@ exec --no-startup-id xrandr --output DVI-I-0 --off --output DVI-I-1 --primary --
 exec --no-startup-id ~/.config/i3/workspacespecific.sh >> ~/.config/i3/workspacespecific.log
 
 #Set thin border and no titlebar for webbrowser and terminal
-for_window [title=".* Mozilla Firefox"] border pixel 0
-for_window [title=".* Chromium"] border pixel 0
-for_window [title="Terminal"] border pixel 1
+for_window [class="Gnome-terminal"] border pixel 1
+for_window [class="Firefox"] border pixel 0
+for_window [class="Chromium"] border pixel 0
+for_window [class="Spotify"] border pixel 0
 for_window [title=".*eclipse.*"] border pixel 1
 for_window [title="cool-retro-term"] border pixel 1
-for_window [class="Spotify"] border pixel 0
 
