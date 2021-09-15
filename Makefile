@@ -76,6 +76,7 @@ cozy: check_stow_dependencies vanilla
 	stow --target $(HOME) i3
 	stow --target $(HOME) pycharm
 	stow --target $(HOME) weechat
+	stow --target $(HOME) doublecmd
 
 unstow_cozy:
 	vam remove youcompleteme
@@ -84,6 +85,8 @@ unstow_cozy:
 	stow --delete --target $(HOME) vimcozy
 	stow --delete --target $(HOME) i3
 	stow --delete --target $(HOME) pycharm
+	stow --delete --target $(HOME) weechat
+	stow --delete --target $(HOME) doublecmd
 
 extras: check_stow_dependencies vanilla
 	$(info )
