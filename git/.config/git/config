@@ -1,5 +1,5 @@
 [user]
-	name = Tim Gremalm
+	name = Tim Gremalmm
 	email = tim@gremalm.se
 
 [diff]
@@ -21,6 +21,9 @@
 	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [mergetool "MergeMeldmerge"]
 	cmd = 'meld' \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
 
 [alias]
 	backup = push backup --all -f
