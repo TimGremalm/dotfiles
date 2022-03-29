@@ -255,6 +255,8 @@ exec --no-startup-id ~/.config/i3/workspacespecific.sh >> ~/.config/i3/workspace
 #Set thin border and no titlebar for webbrowser and terminal
 for_window [class="Gnome-terminal"] border pixel 1
 for_window [class="Firefox"] border pixel 0
+for_window [class="firefox"] border pixel 0
+for_window [class="Navigator"] border pixel 0
 for_window [class="Chromium"] border pixel 0
 for_window [class="Spotify"] border pixel 0
 for_window [title=".*eclipse.*"] border pixel 1
