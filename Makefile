@@ -7,7 +7,7 @@ default: help
 packages_network = openssh-server nmap net-tools ngrep iftop nmon wget curl fail2ban
 packages_file = ncdu sshfs tree mlocate
 packages_tool = tmux htop w3m screen numlockx ncal
-packages_development = git gitk meld python3 python3-pip python3-dev ipython3 python3-numpy python3-dbus python3-pytest setuptools cmake ninja-build autoconf libtool
+packages_development = git gitk meld python3 python3-pip python3-dev ipython3 python3-numpy python3-dbus python3-pytest setuptools cmake ninja-build autoconf libtool tio
 packages_vim = vim vim-addon-manager vim-airline vim-airline-themes vim-youcompleteme vim-ctrlp fonts-powerline
 packages_cozy = i3 feh arandr doublecmd-qt qdirstat onboard filezilla
 packages_extras = inkscape weechat chromium-browser gimp okular youtube-dl vlc timg ffmpeg cool-retro-term
