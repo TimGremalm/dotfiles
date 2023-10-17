@@ -59,7 +59,7 @@ set mouse=a						" Enable mouse select
 "V<Down>y - Select by Row, 1 row down and copy it
 
 " Highlighting ================================================================
-match Error /\s\+$/						" Highlight trailing spaces
+" match Error /\s\+$/						" Highlight trailing spaces
 										" Turn off :match Error none
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 										" Show whitespace with above characters
