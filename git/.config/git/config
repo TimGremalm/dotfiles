@@ -31,8 +31,10 @@
 [core]
 	quotepath = off
 	editor = vim
-	autocrlf = false
 	excludesfile =  ~/.config/git/gitignore_global.txt
+	# Force all line endings to LF, and Not Windows Default CR or CRLF.
+	autocrlf = false # Set autocrlf to false to stop converting between windows style (CRLF) and Unix style (LF)
+	eol = lf # Set LF as your line ending default
 
 [pull]
 	rebase = false
