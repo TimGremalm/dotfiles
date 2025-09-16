@@ -1,5 +1,6 @@
 #!/bin/bash
-main=":1"
+#main=":1"
+main=":0"
 secondary=":1.1"
 echo 
 echo 
@@ -35,9 +36,11 @@ if [ "$DISPLAY" == "$main" ]; then
 
 	#echo "Set position of monitors"
 	#exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 3000x0 --rotate normal --output DP-5 --mode 1920x1080 --pos 0x0 --rotate left --output DP-4 --off --output DP-3 --mode 1920x1080 --pos 1080x0 --rotate normal --output DP-2 --off --output DP-1 --off --output DP-0 --mode 1920x1080 --pos 1080x1080 --rotate normal
+	xrandr --output DVI-I-1 --primary --mode 1680x1050 --pos 0x0 --rotate normal --output DP-1 --mode 1680x1050 --pos 3600x0 --rotate normal --output DP-2 --mode 1920x1080 --pos 1680x0 --rotate normal --output DP-3 --off --output HDMI-1 --off --output HDMI-A-1-1 --off --output DisplayPort-1-3 --off --output DisplayPort-1-4 --off --output DisplayPort-1-5 --off
 
 	#echo "Map touch screen"
 	#exec --no-startup-id xinput --map-to-output 9 DP-0
+	xsetwacom set 13 MapToOutput DP-2
 
 	#echo "Automount tool for drives"
 	#exec --no-startup-id udisks-glue
