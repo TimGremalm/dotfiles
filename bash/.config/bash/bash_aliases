@@ -6,6 +6,9 @@ alias cls='clear'
 alias p='ping -c4 google.se'
 alias vi='vim $@'
 
+# Power
+alias suspend='systemctl suspend'
+
 #Longer more verbose helps when searching
 alias vscode=code
 
