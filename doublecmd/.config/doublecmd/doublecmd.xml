@@ -324,10 +324,10 @@
     <Position Save="True">
       <Maximized>False</Maximized>
       <Splitter>50</Splitter>
-      <Left>1680</Left>
+      <Left>3600</Left>
       <Top>0</Top>
-      <Width>1916</Width>
-      <Height>1019</Height>
+      <Width>1676</Width>
+      <Height>989</Height>
       <PixelsPerInch>96</PixelsPerInch>
     </Position>
   </MainWindow>
@@ -737,7 +737,7 @@
     <PaintMode>0</PaintMode>
     <PaintWidth>5</PaintWidth>
     <NumberOfColumns>1</NumberOfColumns>
-    <ViewerMode>0</ViewerMode>
+    <ViewerMode>1</ViewerMode>
     <PaintColor>255</PaintColor>
     <BackgroundColor>0</BackgroundColor>
     <FontColor>16777215</FontColor>

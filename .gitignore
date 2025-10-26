@@ -15,3 +15,15 @@ vim/.vim/pack/
 # Ignore Gitk config, it changes position all the time
 git/.config/git/gitk
 
+# Double Commander
+doublecmd/.config/doublecmd/colors.json
+doublecmd/.config/doublecmd/doublecmd.cfg
+doublecmd/.config/doublecmd/highlighters.xml
+doublecmd/.config/doublecmd/history.xml
+doublecmd/.config/doublecmd/multiarc.ini
+doublecmd/.config/doublecmd/pixmaps.txt
+doublecmd/.config/doublecmd/pixmaps.cache
+doublecmd/.config/doublecmd/session.ini
+doublecmd/.config/doublecmd/tabs.xml
+
+
