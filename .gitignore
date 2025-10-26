@@ -1,3 +1,7 @@
+#Specific Folders and Directories
+# the ~/builds is linked to an empty sceleton folder. The "builds"-directory is meant to be used at a temporary place for building and compiling code.
+git/builds
+
 # Ignore Ubuntu font cache files
 .uuid
 
