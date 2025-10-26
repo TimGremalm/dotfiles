@@ -51,9 +51,13 @@ if [ "$DISPLAY" == "$main" ]; then
 	#echo "Desktop background for i3"
 	#nitrogen --restore &
 	#feh --bg-fill ~/Pictures/Apollo_17_Moon_Panorama.jpg
+	#feh --bg-fill ~/Pictures/black.jpg
+	feh --bg-fill ~/Pictures/plain-black-desktop.jpg
 
 	#echo "Synery remote control"
 	#exec --no-startup-id synergy
+
+	/snap/bin/signal-desktop
 fi
 
 if [ "$DISPLAY" == "$secondary" ]; then

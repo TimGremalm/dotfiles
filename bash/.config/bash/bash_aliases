@@ -12,7 +12,11 @@ alias suspend='systemctl suspend'
 #Longer more verbose helps when searching
 alias vscode=code
 
-#Git aliases
+# Git Tools
+alias gt='git-tui'
+alias gtl='git-tui log'
+alias gtd='git-tui diff'
+#Git Aliases
 alias gs='git status'
 alias gb='git push backup --all -f'
 alias gs='git status'
@@ -30,7 +34,7 @@ alias monitorhdmi='xrandr --output eDP-1 --off --output VGA-1 --off --output HDM
 alias dualhdmi='xrandr --output eDP-1 --auto --left-of HDMI-1 --output VGA-1 --off --output HDMI-1 --auto'
 
 #Colorful file utils
-#alias grep='grep --color=always'
+alias grep='grep --color=always'
 #alias ls='ls --color=always'
 alias ll='ls --color=always -l --almost-all'
 #alias g='grep --color=always --after-context=1 --before-context=1'
@@ -38,4 +42,6 @@ alias ll='ls --color=always -l --almost-all'
 #alias ggg='grep --color=always --after-context=3 --before-context=3'
 #alias gggg='grep --color=always --after-context=4 --before-context=4'
 #alias dmesg='dmesg --color=always'
+
+
 

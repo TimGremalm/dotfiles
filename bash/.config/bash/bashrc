@@ -2,6 +2,12 @@
 #Enable a more color rich terminal experience
 export TERM="xterm-256color"
 
+#Include common aliases from dotfiles
+if [ -f ~/.config/bash/bash_aliases ]; then
+	. ~/.config/bash/bash_aliases
+fi
+
+#Include development environments
 if [ -f ~/.config/bash/bash_aliases ]; then
 	. ~/.config/bash/bash_aliases
 fi
