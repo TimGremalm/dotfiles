@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.1.11 beta" ConfigVersion="15">
-  <Configuration Save="True" SortOrder="0" TreeType="0">
-    <FolderTabs Save="True"/>
+<doublecmd DCVersion="0.8.2 beta" ConfigVersion="10">
+  <Configuration Save="True" SortOrder="0">
+    <UseConfigInProgramDir>False</UseConfigInProgramDir>
   </Configuration>
   <Colors>
+    <FileFilters>
+      <Filter>
+        <Name>Pascal sources</Name>
+        <FileMasks>*.pas;*.pp</FileMasks>
+        <Color>32768</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
+        <Name>Pascal binaries</Name>
+        <FileMasks>*.ppu;*.o;*.dcu</FileMasks>
+        <Color>16711680</Color>
+        <Attributes/>
+      </Filter>
+      <Filter>
+        <Name>Specified Executables</Name>
+        <FileMasks>*</FileMasks>
+        <Color>55758</Color>
+        <Attributes>-rwxrwxr*x</Attributes>
+      </Filter>
+      <Filter>
+        <Name>Executables</Name>
+        <FileMasks>*</FileMasks>
+        <Color>32768</Color>
+        <Attributes>-*x*</Attributes>
+      </Filter>
+    </FileFilters>
     <UseCursorBorder>False</UseCursorBorder>
     <CursorBorderColor>-2147483635</CursorBorderColor>
     <UseFrameCursor>False</UseFrameCursor>
@@ -30,7 +56,7 @@
     <WlxPlugins>
       <WlxPlugin Enabled="True">
         <Name>wlxMplayer</Name>
-        <Path>%commander_path%/plugins/wlx/wlxmplayer/wlxmplayer.wlx</Path>
+        <Path>%COMMANDER_PATH%/plugins/wlx/wlxmplayer/wlxmplayer.wlx</Path>
         <DetectString>(EXT="MPG")|(EXT="AVI")|(EXT="MPEG")|(EXT="FLV")</DetectString>
       </WlxPlugin>
     </WlxPlugins>
@@ -114,17 +140,7 @@
       <WcxPlugin Enabled="True">
         <ArchiveExt>rar</ArchiveExt>
         <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
-        <Flags>607</Flags>
-      </WcxPlugin>
-      <WcxPlugin Enabled="True">
-        <ArchiveExt>zst</ArchiveExt>
-        <Path>%commander_path%/plugins/wcx/zip/zip.wcx</Path>
-        <Flags>91</Flags>
-      </WcxPlugin>
-      <WcxPlugin Enabled="True">
-        <ArchiveExt>b64</ArchiveExt>
-        <Path>%commander_path%/plugins/wcx/base64/base64.wcx</Path>
-        <Flags>1</Flags>
+        <Flags>68</Flags>
       </WcxPlugin>
     </WcxPlugins>
     <WdxPlugins>
@@ -154,20 +170,6 @@
         <Path>%commander_path%/plugins/wfx/samba/samba.wfx</Path>
       </WfxPlugin>
     </WfxPlugins>
-    <TweakPluginWidth0>0</TweakPluginWidth0>
-    <TweakPluginHeight0>0</TweakPluginHeight0>
-    <TweakPluginWidth1>0</TweakPluginWidth1>
-    <TweakPluginHeight1>0</TweakPluginHeight1>
-    <TweakPluginWidth2>0</TweakPluginWidth2>
-    <TweakPluginHeight2>0</TweakPluginHeight2>
-    <TweakPluginWidth3>0</TweakPluginWidth3>
-    <TweakPluginHeight3>0</TweakPluginHeight3>
-    <TweakPluginWidth4>0</TweakPluginWidth4>
-    <TweakPluginHeight4>0</TweakPluginHeight4>
-    <AutoTweak>False</AutoTweak>
-    <WCXConfigViewMode>0</WCXConfigViewMode>
-    <PluginFilenameStyle>0</PluginFilenameStyle>
-    <PluginPathToBeRelativeTo>%COMMANDER_PATH%</PluginPathToBeRelativeTo>
   </Plugins>
   <Toolbars>
     <MainToolbar>
@@ -187,9 +189,7 @@
           <Icon>cm_options</Icon>
           <Command>cm_Options</Command>
         </Command>
-        <Separator>
-          <Style>False</Style>
-        </Separator>
+        <Separator/>
         <Command>
           <ID>{CDB6B4C9-ACB3-4188-A523-E0275BA2B136}</ID>
           <Icon>cm_briefview</Icon>
@@ -205,17 +205,13 @@
           <Icon>cm_thumbnailsview</Icon>
           <Command>cm_ThumbnailsView</Command>
         </Command>
-        <Separator>
-          <Style>False</Style>
-        </Separator>
+        <Separator/>
         <Command>
           <ID>{55E63E72-E040-42BD-A181-9EA46605EC9E}</ID>
           <Icon>cm_flatview</Icon>
           <Command>cm_FlatView</Command>
         </Command>
-        <Separator>
-          <Style>False</Style>
-        </Separator>
+        <Separator/>
         <Command>
           <ID>{B44B89BC-125D-458B-8D2E-1EBDA47452BA}</ID>
           <Icon>cm_viewhistoryprev</Icon>
@@ -226,9 +222,7 @@
           <Icon>cm_viewhistorynext</Icon>
           <Command>cm_ViewHistoryNext</Command>
         </Command>
-        <Separator>
-          <Style>False</Style>
-        </Separator>
+        <Separator/>
         <Command>
           <ID>{4F4A2C1E-AB94-490B-A3EF-6B7B13EBC9BB}</ID>
           <Icon>cm_markplus</Icon>
@@ -244,9 +238,7 @@
           <Icon>cm_markinvert</Icon>
           <Command>cm_MarkInvert</Command>
         </Command>
-        <Separator>
-          <Style>False</Style>
-        </Separator>
+        <Separator/>
         <Command>
           <ID>{AA70D6F2-1CC8-41AD-826C-B30315D37D89}</ID>
           <Icon>cm_packfiles</Icon>
@@ -257,9 +249,7 @@
           <Icon>cm_extractfiles</Icon>
           <Command>cm_ExtractFiles</Command>
         </Command>
-        <Separator>
-          <Style>False</Style>
-        </Separator>
+        <Separator/>
         <Command>
           <ID>{C50C0184-7B2D-4507-91EC-2E8F97A469B1}</ID>
           <Icon>cm_search</Icon>
@@ -282,62 +272,18 @@
         </Command>
       </Row>
     </MainToolbar>
-    <MiddleToolbar>
-      <Row>
-        <Command>
-          <ID>{1B047721-A7AF-41AF-BED2-4DD5861C378D}</ID>
-          <Icon>cm_view</Icon>
-          <Command>cm_View</Command>
-        </Command>
-        <Command>
-          <ID>{D2852EBF-5613-4DFC-9B97-EA240E68523C}</ID>
-          <Icon>cm_edit</Icon>
-          <Command>cm_Edit</Command>
-        </Command>
-        <Command>
-          <ID>{7687F211-4D21-4EBF-88AA-14CA2959CBD0}</ID>
-          <Icon>cm_copy</Icon>
-          <Command>cm_Copy</Command>
-        </Command>
-        <Command>
-          <ID>{DFC9C15B-9365-4D23-B1CE-FA35C0A039F4}</ID>
-          <Icon>cm_rename</Icon>
-          <Command>cm_Rename</Command>
-        </Command>
-        <Separator>
-          <Style>True</Style>
-        </Separator>
-        <Command>
-          <ID>{DCB2010E-95A8-44CA-9B7F-F0CD8533D586}</ID>
-          <Icon>cm_packfiles</Icon>
-          <Command>cm_PackFiles</Command>
-        </Command>
-        <Command>
-          <ID>{503A880B-EF1D-4F80-ACED-B9ED6F8BC39C}</ID>
-          <Icon>cm_makedir</Icon>
-          <Command>cm_MakeDir</Command>
-        </Command>
-      </Row>
-    </MiddleToolbar>
   </Toolbars>
   <MainWindow>
-    <Position Save="True">
-      <Maximized>False</Maximized>
+    <Position>
+      <Maximized>True</Maximized>
       <Splitter>50</Splitter>
-      <Left>3600</Left>
-      <Top>0</Top>
-      <Width>1676</Width>
-      <Height>989</Height>
-      <PixelsPerInch>96</PixelsPerInch>
     </Position>
   </MainWindow>
   <Language>
-    <POFileName>doublecmd.pot</POFileName>
+    <POFileName>doublecmd.en.po</POFileName>
   </Language>
   <Behaviours>
     <GoToRoot>False</GoToRoot>
-    <ShowCurDirTitleBar>False</ShowCurDirTitleBar>
-    <ActiveRight>False</ActiveRight>
     <RunInTerminalStayOpenCmd>x-terminal-emulator</RunInTerminalStayOpenCmd>
     <RunInTerminalStayOpenParams>-e sh -c '{command}; echo -n Press ENTER to exit... ; read a'</RunInTerminalStayOpenParams>
     <RunInTerminalCloseCmd>x-terminal-emulator</RunInTerminalCloseCmd>
@@ -347,25 +293,12 @@
     <OnlyOneAppInstance>False</OnlyOneAppInstance>
     <LynxLike>True</LynxLike>
     <FileSizeFormat>0</FileSizeFormat>
-    <OperationSizeFormat>0</OperationSizeFormat>
-    <HeaderSizeFormat>0</HeaderSizeFormat>
-    <FooterSizeFormat>0</FooterSizeFormat>
     <FileSizeDigits>1</FileSizeDigits>
-    <HeaderDigits>1</HeaderDigits>
-    <FooterDigits>1</FooterDigits>
-    <OperationSizeDigits>1</OperationSizeDigits>
-    <PersonalizedByte>B</PersonalizedByte>
-    <PersonalizedKilo>KB</PersonalizedKilo>
-    <PersonalizedMega>MB</PersonalizedMega>
-    <PersonalizedGiga>GB</PersonalizedGiga>
-    <PersonalizedTera>TB</PersonalizedTera>
-    <ConfirmQuit>False</ConfirmQuit>
     <MinimizeToTray>False</MinimizeToTray>
     <AlwaysShowTrayIcon>False</AlwaysShowTrayIcon>
     <Mouse>
       <Selection Enabled="True">
         <Button>0</Button>
-        <IconClick>0</IconClick>
       </Selection>
       <SingleClickStart>0</SingleClickStart>
       <ScrollMode>1</ScrollMode>
@@ -376,7 +309,6 @@
     <CustomColumnsChangeAllColumns>False</CustomColumnsChangeAllColumns>
     <BriefViewFileExtAligned>False</BriefViewFileExtAligned>
     <DateTimeFormat>yyyy-mm-dd hh:nn:ss</DateTimeFormat>
-    <ColumnsTitleLikeValues>False</ColumnsTitleLikeValues>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
     <ShowSystemFiles>True</ShowSystemFiles>
@@ -441,7 +373,7 @@
     </OptionsMain>
     <SearchResults>
       <Name>default</Name>
-      <Size>10</Size>
+      <Size>14</Size>
       <Style>0</Style>
       <Quality>0</Quality>
     </SearchResults>
@@ -475,24 +407,10 @@
       <Style>0</Style>
       <Quality>0</Quality>
     </Console>
-    <TreeViewMenu>
-      <Name>default</Name>
-      <Size>10</Size>
-      <Style>0</Style>
-      <Quality>0</Quality>
-    </TreeViewMenu>
-    <StatusBar>
-      <Name>default</Name>
-      <Size>0</Size>
-      <Style>0</Style>
-      <Quality>0</Quality>
-    </StatusBar>
   </Fonts>
   <ToolTips>
     <ShowToolTipMode>True</ShowToolTipMode>
     <CustomFields/>
-    <ActualToolTipMode>0</ActualToolTipMode>
-    <ToolTipHideTimeOut>0</ToolTipHideTimeOut>
   </ToolTips>
   <Layout>
     <MainMenu>True</MainMenu>
@@ -500,19 +418,8 @@
       <FlatIcons>True</FlatIcons>
       <ButtonHeight>24</ButtonHeight>
       <IconSize>16</IconSize>
-      <ShowCaptions>False</ShowCaptions>
       <ReportErrorWithCommands>False</ReportErrorWithCommands>
-      <FilenameStyle>0</FilenameStyle>
-      <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
-      <PathModifierElements>0</PathModifierElements>
     </ButtonBar>
-    <MiddleBar Enabled="False">
-      <FlatIcons>True</FlatIcons>
-      <ButtonHeight>24</ButtonHeight>
-      <IconSize>16</IconSize>
-      <ShowCaptions>False</ShowCaptions>
-      <ReportErrorWithCommands>False</ReportErrorWithCommands>
-    </MiddleBar>
     <DriveBar1>True</DriveBar1>
     <DriveBar2>True</DriveBar2>
     <DriveBarFlat>True</DriveBarFlat>
@@ -537,8 +444,6 @@
     <PanelOfOperationsInBackground>True</PanelOfOperationsInBackground>
     <HorizontalFilePanels>False</HorizontalFilePanels>
     <ShortFormatDriveInfo>True</ShortFormatDriveInfo>
-    <UppercaseDriveLetter>False</UppercaseDriveLetter>
-    <ShowColonAfterDrive>False</ShowColonAfterDrive>
   </Layout>
   <FilesViews>
     <Sorting>
@@ -547,12 +452,10 @@
       <SortFolderMode>0</SortFolderMode>
       <NewFilesPosition>2</NewFilesPosition>
       <UpdatedFilesPosition>2</UpdatedFilesPosition>
-      <SpecialSorting>False</SpecialSorting>
     </Sorting>
     <ColumnsView>
       <AutoSaveWidth>True</AutoSaveWidth>
       <TitleStyle>1</TitleStyle>
-      <LongInStatus>False</LongInStatus>
     </ColumnsView>
     <BriefView>
       <FileExtAligned>False</FileExtAligned>
@@ -563,9 +466,6 @@
       </Columns>
     </BriefView>
     <ExtraLineSpan>2</ExtraLineSpan>
-    <FolderPrefix>[</FolderPrefix>
-    <FolderPostfix>]</FolderPostfix>
-    <RenameConfirmMouse>False</RenameConfirmMouse>
   </FilesViews>
   <Keyboard>
     <Typing>
@@ -619,32 +519,16 @@
       <CopyOwnership>False</CopyOwnership>
       <CopyPermissions>False</CopyPermissions>
       <ExcludeEmptyTemplateDirectories>True</ExcludeEmptyTemplateDirectories>
-      <CopyOnWrite>2</CopyOnWrite>
-      <CopyXattributes>True</CopyXattributes>
     </Options>
-    <LongNameAlert>True</LongNameAlert>
-    <Extract>
-      <Overwrite>False</Overwrite>
-    </Extract>
-    <MultiRename>
-      <MulRenShowMenuBarOnTop>True</MulRenShowMenuBarOnTop>
-      <MulRenInvalidCharReplacement>.</MulRenInvalidCharReplacement>
-      <MulRenLaunchBehavor>0</MulRenLaunchBehavor>
-      <MulRenExitModifiedPreset>0</MulRenExitModifiedPreset>
-      <MulRenSaveRenamingLog>0</MulRenSaveRenamingLog>
-      <MulRenLogFilename>%DC_CONFIG_PATH%/multirename.log</MulRenLogFilename>
-      <MultRenDailyIndividualDirLog>True</MultRenDailyIndividualDirLog>
-      <MulRenFilenameWithFullPathInLog>False</MulRenFilenameWithFullPathInLog>
-      <MulRenPathRangeSeparator>- </MulRenPathRangeSeparator>
-    </MultiRename>
   </FileOperations>
   <Tabs>
     <Options>49937</Options>
     <CharacterLimit>32</CharacterLimit>
     <Position>0</Position>
     <ActionOnDoubleClick>2</ActionOnDoubleClick>
+    <OpenedTabs/>
   </Tabs>
-  <Log Enabled="False" LogFileWithDateInName="False" Count="0">
+  <Log Enabled="False" LogFileWithDateInName="False">
     <FileName>%DC_CONFIG_PATH%/doublecmd.log</FileName>
     <Options>1023</Options>
   </Log>
@@ -653,8 +537,6 @@
     <DirHistory Save="True"/>
     <CmdLineHistory Save="True"/>
     <FileMaskHistory Save="True"/>
-    <VolumeSizeHistory Save="True"/>
-    <CreateDirectoriesHistory Save="True"/>
   </History>
   <QuickSearch>
     <MatchBeginning>True</MatchBeginning>
@@ -679,13 +561,6 @@
     <ShowPathInPopup>False</ShowPathInPopup>
     <ShowOnlyValidEnv>True</ShowOnlyValidEnv>
     <WhereToAddNewHotDir>2</WhereToAddNewHotDir>
-    <InplaceRenameButton>True</InplaceRenameButton>
-    <DoubleClickEditPath>False</DoubleClickEditPath>
-    <FilenameStyle>0</FilenameStyle>
-    <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
-    <PathModifierElements>0</PathModifierElements>
-    <DefaultTextEncoding>none</DefaultTextEncoding>
-    <SystemItemProperties>False</SystemItemProperties>
   </Miscellaneous>
   <Thumbnails Save="True">
     <Width>128</Width>
@@ -711,13 +586,11 @@
     <Exclude>False</Exclude>
     <ExcludeDirs/>
     <CustomIcons>0</CustomIcons>
-    <PixelsPerInch>96</PixelsPerInch>
+    <PixelsPerInch>91</PixelsPerInch>
     <ShowInMenus Enabled="False">
       <Size>16</Size>
     </ShowInMenus>
     <ShowButtonGlyphs>0</ShowButtonGlyphs>
-    <ShowHiddenDimmed>False</ShowHiddenDimmed>
-    <ToolSize>24</ToolSize>
   </Icons>
   <IgnoreList Enabled="False">
     <IgnoreListFile>%DC_CONFIG_PATH%/ignorelist.txt</IgnoreListFile>
@@ -734,33 +607,18 @@
     <CopyMovePath3/>
     <CopyMovePath4/>
     <CopyMovePath5/>
-    <PaintMode>0</PaintMode>
+    <PaintMode>Pen</PaintMode>
     <PaintWidth>5</PaintWidth>
     <NumberOfColumns>1</NumberOfColumns>
-    <ViewerMode>1</ViewerMode>
+    <ViewerMode>0</ViewerMode>
     <PaintColor>255</PaintColor>
     <BackgroundColor>0</BackgroundColor>
     <FontColor>16777215</FontColor>
     <TextPosition>0</TextPosition>
-    <ImageShowTransparency>False</ImageShowTransparency>
-    <TabSpaces>8</TabSpaces>
-    <MaxTextWidth>1024</MaxTextWidth>
-    <PrintMargins>200|200|200|200</PrintMargins>
-    <ShowCaret>False</ShowCaret>
-    <WrapText>False</WrapText>
-    <LeftMargin>4</LeftMargin>
-    <ExtraLineSpan>0</ExtraLineSpan>
-    <AutoCopy>True</AutoCopy>
-    <SynEditMask>*</SynEditMask>
-    <JpegQuality>80</JpegQuality>
   </Viewer>
   <Editor>
     <EditWaitTime>2000</EditWaitTime>
     <SynEditOptions>856075</SynEditOptions>
-    <SynEditTabWidth>8</SynEditTabWidth>
-    <SynEditRightEdge>80</SynEditRightEdge>
-    <SynEditBlockIndent>2</SynEditBlockIndent>
-    <FindWordAtCursor>True</FindWordAtCursor>
   </Editor>
   <SyncDirs>
     <Subdirs>False</Subdirs>
@@ -772,9 +630,7 @@
     <FilterCopyLeft>True</FilterCopyLeft>
     <FilterDuplicates>True</FilterDuplicates>
     <FilterSingles>True</FilterSingles>
-    <FileMask Save="True">*</FileMask>
-    <Asymmetric Save="False">False</Asymmetric>
-    <DateTimeFormat>yyyy.mm.dd hh:nn:ss</DateTimeFormat>
+    <FileMask>*</FileMask>
   </SyncDirs>
   <InternalAssociations>
     <OfferToAddNewFileType>False</OfferToAddNewFileType>
@@ -784,10 +640,6 @@
     <OpenSystemWithTerminalClose>False</OpenSystemWithTerminalClose>
     <OpenSystemWithTerminalStayOpen>False</OpenSystemWithTerminalStayOpen>
     <IncludeFileAssociation>False</IncludeFileAssociation>
-    <DefaultContextActions>True</DefaultContextActions>
-    <FilenameStyle>0</FilenameStyle>
-    <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
-    <PathModifierElements>0</PathModifierElements>
   </InternalAssociations>
   <TreeViewMenu>
     <UseTVMDirectoryHotlistFMC>False</UseTVMDirectoryHotlistFMC>
@@ -880,17 +732,16 @@
   <ColumnsSets DefaultTitleHash="540805403">
     <ColumnsSet UseFrameCursor="False">
       <Name>Default</Name>
-      <Unique>B335F0C8-DEA1-42EF-88A1-566C817AA08E</Unique>
       <CustomView>False</CustomView>
-      <FileSystem>&lt;General&gt;</FileSystem>
-      <PixelsPerInch>96</PixelsPerInch>
-      <CursorBorder Enabled="False"/>
+      <PixelsPerInch>91</PixelsPerInch>
+      <CursorBorder Enabled="False">
+        <Color>-2147483635</Color>
+      </CursorBorder>
       <Columns>
         <Column>
           <Title>Name</Title>
-          <Unique>338FB229-C2A5-4278-BC57-6F868129FC95</Unique>
           <FuncString>[DC().GETFILENAME{}]</FuncString>
-          <Width>627</Width>
+          <Width>454</Width>
           <Align>0</Align>
           <Font>
             <Name>Consolas</Name>
@@ -898,15 +749,22 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Ext</Title>
-          <Unique>00EE5B1A-63EE-4737-B52F-DF20F6EB989C</Unique>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>53</Width>
+          <Width>50</Width>
           <Align>0</Align>
           <Font>
             <Name>Consolas</Name>
@@ -914,15 +772,22 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Size</Title>
-          <Unique>2D12DDA1-EF93-46BA-A7EF-33B27F9BB804</Unique>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>75</Width>
+          <Width>70</Width>
           <Align>1</Align>
           <Font>
             <Name>Consolas</Name>
@@ -930,15 +795,22 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Date</Title>
-          <Unique>DFB3DF4F-389A-4B02-9FFE-86052F0AE138</Unique>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>150</Width>
+          <Width>153</Width>
           <Align>0</Align>
           <Font>
             <Name>Consolas</Name>
@@ -946,211 +818,22 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-      </Columns>
-    </ColumnsSet>
-    <ColumnsSet UseFrameCursor="False">
-      <Name>Searcj View With Path(2025-05-31@07-40-17)</Name>
-      <Unique>B335F0C8-DEA1-42EF-88A1-566C817AA08E</Unique>
-      <CustomView>False</CustomView>
-      <FileSystem>&lt;General&gt;</FileSystem>
-      <PixelsPerInch>96</PixelsPerInch>
-      <CursorBorder Enabled="False"/>
-      <Columns>
-        <Column>
-          <Title>Name</Title>
-          <Unique>338FB229-C2A5-4278-BC57-6F868129FC95</Unique>
-          <FuncString>[DC().GETFILENAME{}]</FuncString>
-          <Width>627</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Ext</Title>
-          <Unique>00EE5B1A-63EE-4737-B52F-DF20F6EB989C</Unique>
-          <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>53</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Size</Title>
-          <Unique>2D12DDA1-EF93-46BA-A7EF-33B27F9BB804</Unique>
-          <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>75</Width>
-          <Align>1</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Date</Title>
-          <Unique>0B457C9E-03EC-4D1A-8126-DFEE4ED8B7A9</Unique>
-          <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>150</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Creation date/time</Title>
-          <Unique>C0FBC83E-5299-4069-8591-5B850B8DA9CF</Unique>
-          <FuncString>[DC().GETFILECREATIONTIME{}]</FuncString>
-          <Width>150</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Path</Title>
-          <Unique>692CC2EF-83B3-4DF3-AB89-64DECCAEBBD7</Unique>
-          <FuncString>[DC().GETFILEPATH{}]</FuncString>
-          <Width>999</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-      </Columns>
-    </ColumnsSet>
-    <ColumnsSet UseFrameCursor="False">
-      <Name>Detailes View</Name>
-      <Unique>B335F0C8-DEA1-42EF-88A1-566C817AA08E</Unique>
-      <CustomView>False</CustomView>
-      <FileSystem>&lt;General&gt;</FileSystem>
-      <PixelsPerInch>96</PixelsPerInch>
-      <CursorBorder Enabled="False"/>
-      <Columns>
-        <Column>
-          <Title>Name</Title>
-          <Unique>338FB229-C2A5-4278-BC57-6F868129FC95</Unique>
-          <FuncString>[DC().GETFILENAME{}]</FuncString>
-          <Width>627</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Ext</Title>
-          <Unique>00EE5B1A-63EE-4737-B52F-DF20F6EB989C</Unique>
-          <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>53</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Size</Title>
-          <Unique>2D12DDA1-EF93-46BA-A7EF-33B27F9BB804</Unique>
-          <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>75</Width>
-          <Align>1</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Date</Title>
-          <Unique>0B457C9E-03EC-4D1A-8126-DFEE4ED8B7A9</Unique>
-          <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>150</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Created</Title>
-          <Unique>23DF0BBE-FDC9-4C40-9C6E-BB880E793C03</Unique>
-          <FuncString>[DC().GETFILECREATIONTIME{}]</FuncString>
-          <Width>150</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Attr</Title>
-          <Unique>05B88BF0-79B8-4511-B039-7C7F99B754D7</Unique>
           <FuncString>[DC().GETFILEATTR{}]</FuncString>
-          <Width>80</Width>
+          <Width>100</Width>
           <Align>0</Align>
           <Font>
             <Name>Consolas</Name>
@@ -1158,22 +841,14 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <UseInvertedSelection>False</UseInvertedSelection>
-          <UseInactiveSelColor>False</UseInactiveSelColor>
-          <Overcolor>True</Overcolor>
-        </Column>
-        <Column>
-          <Title>Link to</Title>
-          <Unique>362FCF72-BA84-4874-8DC6-9C06267B48EE</Unique>
-          <FuncString>[DC().GETFILELINKTO{}]</FuncString>
-          <Width>250</Width>
-          <Align>0</Align>
-          <Font>
-            <Name>Consolas</Name>
-            <Size>10</Size>
-            <Style>0</Style>
-            <Quality>0</Quality>
-          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
@@ -1181,12 +856,4 @@
       </Columns>
     </ColumnsSet>
   </ColumnsSets>
-  <Differ>
-    <IgnoreCase>False</IgnoreCase>
-    <AutoCompare>True</AutoCompare>
-    <KeepScrolling>True</KeepScrolling>
-    <PaintBackground>True</PaintBackground>
-    <LineDifferences>False</LineDifferences>
-    <IgnoreWhiteSpace>False</IgnoreWhiteSpace>
-  </Differ>
 </doublecmd>

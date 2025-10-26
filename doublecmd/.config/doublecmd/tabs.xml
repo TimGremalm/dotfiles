@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd>
+  <Tabs>
+    <OpenedTabs>
+      <Left>
+        <ActiveTab>10</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="plugins">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2022/</Path>
+                  <Path Filename="2021">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2021/</Path>
+                  <Path Filename="2023">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2023/</Path>
+                  <Path Filename="2022">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="inskannat">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2022/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2022/inskannat/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2022/</Path>
+                  <Path Filename="2023">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="inskannat">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2023/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2023/inskannat/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2023/</Path>
+                  <Path Filename="2021">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2021/</Path>
+                  <Path Filename="2022">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2022/</Path>
+                  <Path Filename="2023">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2023/</Path>
+                  <Path Filename="2020">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2020/</Path>
+                  <Path Filename="2019">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2019/</Path>
+                  <Path Filename="2018">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2018/</Path>
+                  <Path Filename="2017">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2017/</Path>
+                  <Path Filename="2016">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2016/</Path>
+                  <Path Filename="2016">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/2016/</Path>
+                  <Path Active="True" Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/TG Energi &amp; Teknik/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="plugins">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Seagate4TB">/media/tim/</Path>
+                  <Path Filename="Programering">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Programering/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="Dropbox">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="projects">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="StepperTest">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="StepperTest2">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="StepperTestA3967">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTestA3967/</Path>
+                  <Path Filename="StepperTest2">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="StepperTest">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                  <Path Filename="Backup RPI Image">/media/tim/tos2tb/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Alan Watts - Buddhism, Religion of no Religion 1-3">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Buddhism, Religion of no Religion 1-3/</Path>
+                  <Path Filename="Alan Watts - The Tao of Philosophy">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - The Tao of Philosophy/</Path>
+                  <Path Filename="Alan Watts - Who is it who knows there is no Ego">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Who is it who knows there is no Ego/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="Alan Watts - Still the Mind (Meditation)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Still the Mind (Meditation)/</Path>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Active="True" Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="plugins">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Seagate4TB">/media/tim/</Path>
+                  <Path Filename="Programering">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Programering/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="Dropbox">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="projects">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="StepperTest">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="StepperTest2">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="StepperTestA3967">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTestA3967/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="KöksJazz">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="KitchenJazz">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/KöksJazz/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/KöksJazz/KitchenJazz/</Path>
+                  <Path Filename="">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/KöksJazz/</Path>
+                  <Path Filename="">/media/tim/tos2tb/</Path>
+                  <Path Active="True" Filename="..">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="plugins">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Seagate4TB">/media/tim/</Path>
+                  <Path Filename="Programering">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Programering/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="Dropbox">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="projects">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="StepperTest">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="StepperTest2">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="StepperTestA3967">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTestA3967/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/</Path>
+                  <Path Filename="KöksJazz">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="KitchenJazz">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/KöksJazz/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/KöksJazz/KitchenJazz/</Path>
+                  <Path Filename="">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/KöksJazz/</Path>
+                  <Path Filename="">/media/tim/tos2tb/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="raw">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/raw/</Path>
+                  <Path Filename="breakout">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Active="True" Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/breakout/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Buddhism, Religion of no Religion 1-3/</Path>
+                  <Path Filename="Alan Watts - The Tao of Philosophy">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - The Tao of Philosophy/</Path>
+                  <Path Filename="Alan Watts - Who is it who knows there is no Ego">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Who is it who knows there is no Ego/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="Alan Watts - Still the Mind (Meditation)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Still the Mind (Meditation)/</Path>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="2025-09-30_Personligt_brev_Tim_Gremalm_Embedded-utvecklare_Knowit.txt">/home/tim/Downloads/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Alan Watts - Still the Mind (Meditation)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Still the Mind (Meditation)/</Path>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="information">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="text">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="Books">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Active="True" Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/Books/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Downloads/</Path>
+                  <Path Filename="Pictures">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Pictures/</Path>
+                  <Path Filename="projects">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/projects/</Path>
+                  <Path Filename="Videos">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Videos/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="mixing-station-pc-linux-2.3.1_602.zip">/home/tim/Downloads/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Downloads/</Path>
+                  <Path Filename="Pictures">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Pictures/</Path>
+                  <Path Filename="projects">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/projects/</Path>
+                  <Path Filename="Videos">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Videos/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="Deklaration_436982189.pdf">/home/tim/Downloads/</Path>
+                  <Path Active="True" Filename="..">/home/tim/dwhelper/</Path>
+                  <Path Filename=".ipython">/home/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Downloads/</Path>
+                  <Path Filename="Pictures">/home/tim/</Path>
+                  <Path Filename="Screenshots">/home/tim/Pictures/</Path>
+                  <Path Filename="vlc">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/vlc/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/tim/Pictures/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshot from 2025-10-13 13-16-28.png">/home/tim/Pictures/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Downloads/</Path>
+                  <Path Filename="Pictures">/home/tim/</Path>
+                  <Path Filename="Screenshots">/home/tim/Pictures/</Path>
+                  <Path Filename="vlc">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/vlc/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/tim/Pictures/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshot from 2025-10-13 13-16-28.png">/home/tim/Pictures/</Path>
+                  <Path Filename="">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="favorites">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/</Path>
+                  <Path Filename="Beach Dogging! Ainara fucks a voyeur and a couple join the fun [hcuialo5d83].mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Left>
+      <Right>
+        <ActiveTab>4</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/Backup DaVinci 2021-08-23/</Path>
+                  <Path Filename="Film">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Active="True" Filename="TimGremalm">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Buddhism, Religion of no Religion 1-3/</Path>
+                  <Path Filename="Alan Watts - The Tao of Philosophy">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - The Tao of Philosophy/</Path>
+                  <Path Filename="Alan Watts - Who is it who knows there is no Ego">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Who is it who knows there is no Ego/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="Alan Watts - Still the Mind (Meditation)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Still the Mind (Meditation)/</Path>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts Shrine">/home/tim/Downloads/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts Shrine/</Path>
+                  <Path Filename="Sökta jobb">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/cv/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/cv/Sökta jobb/</Path>
+                  <Path Filename="CV_Tim_Gremalm_2025_08.pdf">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/cv/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="Alan Watts - The Tao of Philosophy">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - The Tao of Philosophy/</Path>
+                  <Path Filename="Alan Watts - Buddhism, Religion of no Religion 1-3">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Buddhism, Religion of no Religion 1-3/</Path>
+                  <Path Filename="Alan Watts - The Tao of Philosophy">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - The Tao of Philosophy/</Path>
+                  <Path Filename="Alan Watts - Who is it who knows there is no Ego">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/Alan Watts - Who is it who knows there is no Ego/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts/</Path>
+                  <Path Filename="Alan Watts - Still the Mind (Meditation)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Still the Mind (Meditation)/</Path>
+                  <Path Filename="alan watts - teaches meditation">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/alan watts - teaches meditation/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Way of Liberation, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Liberation, The/</Path>
+                  <Path Filename="Way of Zen, The">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Way of Zen, The/</Path>
+                  <Path Filename="Zen and the Beat Way">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Zen and the Beat Way/</Path>
+                  <Path Filename="Behold the Spirit">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Behold the Spirit/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts Shrine">/home/tim/Downloads/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts Shrine/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>2</Direction>
+                <Function>7</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts, Alan">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts_ In the Academy [ed. Columbus &amp; Rice]">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/Alan Watts_ In the Academy [ed. Columbus &amp; Rice]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts, Alan/</Path>
+                  <Path Filename="Watts - 1957 - The Way of Zen (Unabridged)">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Watts - 1957 - The Way of Zen (Unabridged)/</Path>
+                  <Path Filename="Alan Watts-The Book [audio book]">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts-The Book [audio book]/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="Alan Watts">/home/tim/Downloads/</Path>
+                  <Path Filename="Alan Watts Aldous Huxley Eugenics Brainwashing">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts Aldous Huxley Eugenics Brainwashing/</Path>
+                  <Path Filename="Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan_Watts_Do_You_Do_It_Or_Does_It_Do_You/</Path>
+                  <Path Filename="Alan Watts - Way of Zen">/home/tim/Downloads/Alan Watts/</Path>
+                  <Path Filename="CD1">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD1/</Path>
+                  <Path Filename="CD2">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="..">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD2/</Path>
+                  <Path Filename="CD3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/</Path>
+                  <Path Filename="Way of Zen CD3_11mp3.MP3">/home/tim/Downloads/Alan Watts/Alan Watts - Way of Zen/CD3/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/StepperTest/StepperTest2/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/AlanWattsShrine/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Alan Watts Shrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/</Path>
+                  <Path Filename="AlanWattsShrine">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/projects/Alan Watts Shrine/</Path>
+                  <Path Filename="Downloads">/home/tim/</Path>
+                  <Path Filename="..">/home/tim/Downloads/</Path>
+                  <Path Filename="Pictures">/home/tim/</Path>
+                  <Path Filename="Screenshots">/home/tim/Pictures/</Path>
+                  <Path Filename="vlc">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/vlc/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshots">/home/tim/Pictures/</Path>
+                  <Path Filename="..">/home/tim/Pictures/Screenshots/</Path>
+                  <Path Filename="Screenshot from 2025-10-13 13-16-28.png">/home/tim/Pictures/</Path>
+                  <Path Filename="">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/</Path>
+                  <Path Filename="shared-resources">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/</Path>
+                  <Path Filename="shared-resources">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/</Path>
+                  <Path Filename="other">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/</Path>
+                  <Path Filename="shared-resources">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/</Path>
+                  <Path Filename="Swedish porn casting-swedish_porn_casting.mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/Backup DaVinci 2021-08-23/</Path>
+                  <Path Filename="Film">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="TimGremalm">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="amateur wife shared and used by two guys and gets a double creampie [15661373].mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="special">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="special1 - Clip 001.avi">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/Backup DaVinci 2021-08-23/</Path>
+                  <Path Filename="Film">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="TimGremalm">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="amateur wife shared and used by two guys and gets a double creampie [15661373].mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="special">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Active="True" Filename="special2 - Clip 003.avi">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/Backup DaVinci 2021-08-23/</Path>
+                  <Path Filename="Film">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="TimGremalm">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="amateur wife shared and used by two guys and gets a double creampie [15661373].mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="special">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="special2 - Clip 003.avi">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="">/home/tim/dwhelper/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="media">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="bilder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/</Path>
+                  <Path Filename="Me">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/</Path>
+                  <Path Filename="Messenger_creation_BEC42618-1080-4409-86DF-26CDE7F8E5C2.jpeg">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/Me/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/Backup DaVinci 2021-08-23/</Path>
+                  <Path Filename="Film">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="TimGremalm">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="amateur wife shared and used by two guys and gets a double creampie [15661373].mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="special">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="special2 - Clip 003.avi">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="">/home/tim/dwhelper/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="media">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="bilder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/</Path>
+                  <Path Filename="Me">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/</Path>
+                  <Path Filename="Messenger_creation_BEC42618-1080-4409-86DF-26CDE7F8E5C2.jpeg">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/Me/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="configuration">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="gremalm.se.txt">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/configuration/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>1</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/usr/lib/doublecmd/</Path>
+                  <Path Filename="..">/media/tim/Toshiba 2TB/Backup DaVinci 2021-08-23/</Path>
+                  <Path Filename="Film">/media/tim/Toshiba 2TB/</Path>
+                  <Path Filename="Backup Dell XPS (2025-05-19)">/media/tim/Seagate4TB/</Path>
+                  <Path Filename="TimGremalm">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/</Path>
+                  <Path Filename="amateur wife shared and used by two guys and gets a double creampie [15661373].mp4">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/TimGremalm/media/other/shared-resources/favorites/</Path>
+                  <Path Filename="special">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="New folder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/New folder/</Path>
+                  <Path Filename="special2 - Clip 003.avi">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/porr/special/</Path>
+                  <Path Filename="">/home/tim/dwhelper/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/personal/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="media">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="bilder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/</Path>
+                  <Path Filename="Me">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/</Path>
+                  <Path Filename="Messenger_creation_BEC42618-1080-4409-86DF-26CDE7F8E5C2.jpeg">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/media/bilder/Me/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="configuration">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/configuration/</Path>
+                  <Path Filename="information">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/</Path>
+                  <Path Filename="text">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/</Path>
+                  <Path Filename="products">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/</Path>
+                  <Path Filename="Audio">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/products/</Path>
+                  <Path Filename="Grundig Stenomatic Magnetic Audio Recorder">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/products/Audio/</Path>
+                  <Path Filename="Stenomatic Transistorausführung R-Player Grundig Radio- _Radiomuseum.org-filer">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/products/Audio/Grundig Stenomatic Magnetic Audio Recorder/</Path>
+                  <Path Filename="..">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/products/Audio/Grundig Stenomatic Magnetic Audio Recorder/Stenomatic Transistorausführung R-Player Grundig Radio- _Radiomuseum.org-filer/</Path>
+                  <Path Filename="radiomuseum-grundig-stenomatic-transistorausfuhrung-518571.pdf">/media/tim/Seagate4TB/Backup Dell XPS (2025-05-19)/Dropbox/information/text/products/Audio/Grundig Stenomatic Magnetic Audio Recorder/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Right>
+    </OpenedTabs>
+  </Tabs>
+</doublecmd>
